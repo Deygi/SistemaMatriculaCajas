@@ -1,0 +1,8 @@
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.exe.config
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.exe
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Properties.Resources.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csproj.GenerateResource.Cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.exe
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.pdb
