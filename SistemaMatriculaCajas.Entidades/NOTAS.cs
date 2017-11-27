@@ -7,19 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class HORARIO
+    public partial class NOTAS
     {
-        public int Cod_Horario { get; set; }
-        public string Dias { get; set; }
-        public System.TimeSpan H_Inici { get; set; }
-        public System.TimeSpan H_Fin { get; set; }
+        public int Cod_Nota { get; set; }
+        public int Nota_Semestre { get; set; }
+        public int Nota_Recuperacion { get; set; }
+        public string Obsv { get; set; }
         public string Cod_Curso { get; set; }
+        public int Cod_Docente_Curso { get; set; }
+        public string Cod_Matricula { get; set; }
     
         public virtual CURSO CURSO { get; set; }
+        public virtual DOCENTE_CURSO DOCENTE_CURSO { get; set; }
+        public virtual MATRICULA MATRICULA { get; set; }
     }
 }

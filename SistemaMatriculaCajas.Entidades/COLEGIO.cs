@@ -7,29 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PERIODO
+    public partial class COLEGIO
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PERIODO()
+        public COLEGIO()
         {
-            this.MATRICULA = new HashSet<MATRICULA>();
-            this.POSTULANTE = new HashSet<POSTULANTE>();
+            this.PERSONA = new HashSet<PERSONA>();
         }
     
-        public string Cod_Periodo { get; set; }
-        public System.DateTime Ini_Semestre { get; set; }
-        public System.DateTime Fin_Semestre { get; set; }
-        public System.DateTime Recuperacion { get; set; }
-        public System.DateTime Ini_Matricula { get; set; }
+        public string Cod_Colegio { get; set; }
+        public string Nom_Colegio { get; set; }
+        public string Cod_Distrito { get; set; }
     
+        public virtual DISTRITO DISTRITO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MATRICULA> MATRICULA { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<POSTULANTE> POSTULANTE { get; set; }
+        public virtual ICollection<PERSONA> PERSONA { get; set; }
     }
 }

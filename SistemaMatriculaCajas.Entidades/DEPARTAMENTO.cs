@@ -7,32 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class MATRICULA
+    public partial class DEPARTAMENTO
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public MATRICULA()
+        public DEPARTAMENTO()
         {
-            this.NOTAS = new HashSet<NOTAS>();
+            this.PROVINCIA = new HashSet<PROVINCIA>();
         }
     
-        public string Cod_Matricula { get; set; }
-        public string Obs { get; set; }
-        public Nullable<System.DateTime> Fecha_Matricula { get; set; }
-        public string Cod_Periodo { get; set; }
-        public string Cod_Salon { get; set; }
-        public string Cod_CarreraP { get; set; }
-        public string Cod_Estudiante { get; set; }
+        public string Cod_Dept { get; set; }
+        public string Nom_Dept { get; set; }
     
-        public virtual CARRERA_PROFESIONAL CARRERA_PROFESIONAL { get; set; }
-        public virtual ESTUDIANTE ESTUDIANTE { get; set; }
-        public virtual PERIODO PERIODO { get; set; }
-        public virtual SALON SALON { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NOTAS> NOTAS { get; set; }
+        public virtual ICollection<PROVINCIA> PROVINCIA { get; set; }
     }
 }

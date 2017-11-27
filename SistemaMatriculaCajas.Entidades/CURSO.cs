@@ -7,25 +7,30 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ESTUDIANTE
+    public partial class CURSO
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ESTUDIANTE()
+        public CURSO()
         {
-            this.MATRICULA = new HashSet<MATRICULA>();
+            this.HORARIO = new HashSet<HORARIO>();
+            this.NOTAS = new HashSet<NOTAS>();
         }
     
-        public string Cod_Estudiante { get; set; }
-        public int Cod_Postulante { get; set; }
-        public string Estado_academico { get; set; }
+        public string Cod_Curso { get; set; }
+        public string Nom_Curso { get; set; }
+        public int Cant_Crd { get; set; }
+        public string Semestre { get; set; }
+        public string Cod_CarreraP { get; set; }
     
-        public virtual POSTULANTE POSTULANTE { get; set; }
+        public virtual CARRERA_PROFESIONAL CARRERA_PROFESIONAL { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MATRICULA> MATRICULA { get; set; }
+        public virtual ICollection<HORARIO> HORARIO { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NOTAS> NOTAS { get; set; }
     }
 }

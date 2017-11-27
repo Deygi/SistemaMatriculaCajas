@@ -7,17 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class EXAMEN
+    public partial class ESTUDIANTE
     {
-        public int Cod_Examen { get; set; }
-        public int Puntaje { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public ESTUDIANTE()
+        {
+            this.MATRICULA = new HashSet<MATRICULA>();
+        }
+    
+        public string Cod_Estudiante { get; set; }
         public int Cod_Postulante { get; set; }
+        public string Estado_academico { get; set; }
     
         public virtual POSTULANTE POSTULANTE { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MATRICULA> MATRICULA { get; set; }
     }
 }

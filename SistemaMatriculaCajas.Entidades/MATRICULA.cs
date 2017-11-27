@@ -7,28 +7,32 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class DISTRITO
+    public partial class MATRICULA
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DISTRITO()
+        public MATRICULA()
         {
-            this.COLEGIO = new HashSet<COLEGIO>();
-            this.PERSONA = new HashSet<PERSONA>();
+            this.NOTAS = new HashSet<NOTAS>();
         }
     
-        public string Cod_Distrito { get; set; }
-        public string Nom_Distrito { get; set; }
-        public string Cod_Provincia { get; set; }
+        public string Cod_Matricula { get; set; }
+        public string Obs { get; set; }
+        public Nullable<System.DateTime> Fecha_Matricula { get; set; }
+        public string Cod_Periodo { get; set; }
+        public string Cod_Salon { get; set; }
+        public string Cod_CarreraP { get; set; }
+        public string Cod_Estudiante { get; set; }
     
+        public virtual CARRERA_PROFESIONAL CARRERA_PROFESIONAL { get; set; }
+        public virtual ESTUDIANTE ESTUDIANTE { get; set; }
+        public virtual PERIODO PERIODO { get; set; }
+        public virtual SALON SALON { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<COLEGIO> COLEGIO { get; set; }
-        public virtual PROVINCIA PROVINCIA { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PERSONA> PERSONA { get; set; }
+        public virtual ICollection<NOTAS> NOTAS { get; set; }
     }
 }

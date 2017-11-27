@@ -7,22 +7,34 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Modelo
+namespace SistemaMatriculaCajas.Entidades
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class MODALIDAD
+    public partial class PERSONA
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public MODALIDAD()
+        public PERSONA()
         {
             this.POSTULANTE = new HashSet<POSTULANTE>();
         }
     
-        public string Cod_Modalidad { get; set; }
-        public string Nom_Modalidad { get; set; }
+        public string Cod_DNI { get; set; }
+        public string Ap_Paterno { get; set; }
+        public string Ap_Materno { get; set; }
+        public string Nom { get; set; }
+        public byte[] Foto { get; set; }
+        public string Sexo { get; set; }
+        public Nullable<System.DateTime> FechaNac { get; set; }
+        public string Domicilio { get; set; }
+        public string Telf_Persona { get; set; }
+        public string Correo { get; set; }
+        public string Cod_Colegio { get; set; }
+        public string Cod_Distrito { get; set; }
     
+        public virtual COLEGIO COLEGIO { get; set; }
+        public virtual DISTRITO DISTRITO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<POSTULANTE> POSTULANTE { get; set; }
     }
