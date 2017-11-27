@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcData_Carrera_Profesional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaMatriculaCajas.Entidades\SistemaMatriculaCajas.Entidades.csproj">
+      <Project>{778c3f3a-6a3a-4e02-9d48-05fa6405c358}</Project>
+      <Name>SistemaMatriculaCajas.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaMatriculaCajas.Modelo\SistemaMatriculaCajas.Modelo.csproj">
+      <Project>{6dd39345-e358-4f0f-b190-f48115c3e50b}</Project>
+      <Name>SistemaMatriculaCajas.Modelo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

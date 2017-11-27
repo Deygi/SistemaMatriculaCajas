@@ -81,10 +81,17 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
       <LastGenOutput>ModeloSistemaMatriculaCajas.Context.cs</LastGenOutput>
+      <CustomToolNamespace>SistemaMatriculaCajas.Entidades</CustomToolNamespace>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaMatriculaCajas.Entidades\SistemaMatriculaCajas.Entidades.csproj">
+      <Project>{778c3f3a-6a3a-4e02-9d48-05fa6405c358}</Project>
+      <Name>SistemaMatriculaCajas.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
