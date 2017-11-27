@@ -30,8 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +51,104 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CARRERA_PROFESIONAL.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COLEGIO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CURSO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DEPARTAMENTO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DISTRITO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DOCENTE.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DOCENTE_CURSO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ESTUDIANTE.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EXAMEN.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HORARIO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MATRICULA.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MODALIDAD.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloSistemaMatriculaCajas.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloSistemaMatriculaCajas.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloSistemaMatriculaCajas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloSistemaMatriculaCajas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NOTAS.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERIODO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONA.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="POSTULANTE.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PROVINCIA.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SALON.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ModeloSistemaMatriculaCajas.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloSistemaMatriculaCajas.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="ModeloSistemaMatriculaCajas.edmx.diagram">
+      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModeloSistemaMatriculaCajas.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
+      <LastGenOutput>ModeloSistemaMatriculaCajas.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModeloSistemaMatriculaCajas.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
+      <LastGenOutput>ModeloSistemaMatriculaCajas.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
