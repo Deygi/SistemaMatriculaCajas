@@ -3,3 +3,8 @@ C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\bin\D
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb

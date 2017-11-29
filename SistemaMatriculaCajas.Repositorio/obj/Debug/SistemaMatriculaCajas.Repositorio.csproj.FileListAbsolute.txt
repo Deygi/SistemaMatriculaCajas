@@ -11,3 +11,16 @@ C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.dll
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.pdb

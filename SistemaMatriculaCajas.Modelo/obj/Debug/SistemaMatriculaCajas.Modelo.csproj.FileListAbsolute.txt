@@ -10,3 +10,15 @@ C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Modelo\bin\Debu
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Modelo\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Modelo\bin\Debug\EntityFramework.xml
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\SistemaMatriculaCajas.Modelo.dll.config
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\EntityFramework.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\EntityFramework.xml
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\obj\Debug\SistemaMatriculaCajas.Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\obj\Debug\SistemaMatriculaCajas.Modelo.dll
+C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Modelo\obj\Debug\SistemaMatriculaCajas.Modelo.pdb
