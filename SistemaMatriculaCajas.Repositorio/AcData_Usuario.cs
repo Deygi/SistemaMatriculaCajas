@@ -30,7 +30,8 @@ namespace SistemaMatriculaCajas.Repositorio
                 return false;
             }
         }
-        /// hola chico            
+        /// hola chico
+        /// Daysi Jlores
 
 
         public USUARIO consultar(int cod)
