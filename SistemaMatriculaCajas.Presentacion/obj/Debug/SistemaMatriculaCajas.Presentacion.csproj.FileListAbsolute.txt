@@ -42,3 +42,8 @@ C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Presentacion\obj\De
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU01_Autenticacion.GUI_Login.resources
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Properties.Resources.resources
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csproj.GenerateResource.Cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.GUI_Principal.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.UserControlPrincipal.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.Form_NuevoUsuario.resources

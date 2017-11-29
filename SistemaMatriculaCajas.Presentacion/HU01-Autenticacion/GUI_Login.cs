@@ -34,7 +34,8 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
                 {
                     MessageBox.Show("ingreso con exito");
                     //Redirecciona
-                    new Form1().ShowDialog();
+                    new GUI_Principal().ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -50,11 +51,11 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
         private void listarUsuarios()
         {
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
-            textBox1.Clear();
-            foreach (var usuario in listaUsuarios)
-            {
-                textBox1.Text += usuario.Nom_Usuario + usuario.Apll_Paterno + "\n";
-            }
+        //textBox1.Clear();
+        //foreach (var usuario in listaUsuarios)
+        //{
+        //    textBox1.Text += usuario.Nom_Usuario + usuario.Apll_Paterno + "\n";
+        //}
         }
 
         //Metodos de ayuda
@@ -66,11 +67,17 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
                 Pass_Usuario = txtPass_Usuario.Text
             };
         }
-        //eventos
-        private void btnAceptar_Click(object sender, EventArgs e)
+
+        private void BtonAceptar_Click(object sender, EventArgs e)
         {
-            //verificarUsuario();
-            listarUsuarios();
+            verificarUsuario();
         }
+
+        private void BtonCancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //eventos
+
     }
 }

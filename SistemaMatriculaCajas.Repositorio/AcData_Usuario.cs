@@ -30,12 +30,7 @@ namespace SistemaMatriculaCajas.Repositorio
                 return false;
             }
         }
-        /// hola chico
-        /// Daysi Jlores
-        /// chichardo
-        /// 1234
-        /// Testeo multiple
-
+        
 
         public USUARIO consultar(int cod)
         {
