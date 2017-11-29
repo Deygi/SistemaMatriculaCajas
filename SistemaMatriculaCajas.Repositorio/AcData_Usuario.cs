@@ -30,6 +30,8 @@ namespace SistemaMatriculaCajas.Repositorio
                 return false;
             }
         }
+        /// hola chico            
+
 
         public USUARIO consultar(int cod)
         {
