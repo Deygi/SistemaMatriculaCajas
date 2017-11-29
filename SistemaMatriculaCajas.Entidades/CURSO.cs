@@ -18,19 +18,17 @@ namespace SistemaMatriculaCajas.Entidades
         public CURSO()
         {
             this.HORARIO = new HashSet<HORARIO>();
-            this.NOTAS = new HashSet<NOTAS>();
         }
     
-        public string Cod_Curso { get; set; }
+        public int Cod_Curso { get; set; }
         public string Nom_Curso { get; set; }
+        public string Alias_Curso { get; set; }
         public int Cant_Crd { get; set; }
         public string Semestre { get; set; }
-        public string Cod_CarreraP { get; set; }
+        public int Cod_CarreraP { get; set; }
     
         public virtual CARRERA_PROFESIONAL CARRERA_PROFESIONAL { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HORARIO> HORARIO { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NOTAS> NOTAS { get; set; }
     }
 }

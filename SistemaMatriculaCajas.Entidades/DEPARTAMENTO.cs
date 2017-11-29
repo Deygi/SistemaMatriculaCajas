@@ -20,7 +20,7 @@ namespace SistemaMatriculaCajas.Entidades
             this.PROVINCIA = new HashSet<PROVINCIA>();
         }
     
-        public string Cod_Dept { get; set; }
+        public int Cod_Dept { get; set; }
         public string Nom_Dept { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

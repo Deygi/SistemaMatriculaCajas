@@ -29,19 +29,21 @@ namespace SistemaMatriculaCajas.Entidades
         public virtual DbSet<COLEGIO> COLEGIO { get; set; }
         public virtual DbSet<CURSO> CURSO { get; set; }
         public virtual DbSet<DEPARTAMENTO> DEPARTAMENTO { get; set; }
+        public virtual DbSet<DETALLE_RD> DETALLE_RD { get; set; }
         public virtual DbSet<DISTRITO> DISTRITO { get; set; }
-        public virtual DbSet<DOCENTE> DOCENTE { get; set; }
-        public virtual DbSet<DOCENTE_CURSO> DOCENTE_CURSO { get; set; }
         public virtual DbSet<ESTUDIANTE> ESTUDIANTE { get; set; }
         public virtual DbSet<EXAMEN> EXAMEN { get; set; }
         public virtual DbSet<HORARIO> HORARIO { get; set; }
         public virtual DbSet<MATRICULA> MATRICULA { get; set; }
         public virtual DbSet<MODALIDAD> MODALIDAD { get; set; }
-        public virtual DbSet<NOTAS> NOTAS { get; set; }
+        public virtual DbSet<MODULO> MODULO { get; set; }
         public virtual DbSet<PERIODO> PERIODO { get; set; }
         public virtual DbSet<PERSONA> PERSONA { get; set; }
         public virtual DbSet<POSTULANTE> POSTULANTE { get; set; }
         public virtual DbSet<PROVINCIA> PROVINCIA { get; set; }
+        public virtual DbSet<RD> RD { get; set; }
         public virtual DbSet<SALON> SALON { get; set; }
+        public virtual DbSet<USUARIO> USUARIO { get; set; }
+        public virtual DbSet<USUARIO_MODULO> USUARIO_MODULO { get; set; }
     }
 }

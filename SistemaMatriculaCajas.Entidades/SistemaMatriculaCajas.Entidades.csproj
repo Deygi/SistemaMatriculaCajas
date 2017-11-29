@@ -52,13 +52,10 @@
     <Compile Include="DEPARTAMENTO.cs">
       <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
     </Compile>
+    <Compile Include="DETALLE_RD.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
     <Compile Include="DISTRITO.cs">
-      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DOCENTE.cs">
-      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DOCENTE_CURSO.cs">
       <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
     </Compile>
     <Compile Include="ESTUDIANTE.cs">
@@ -82,7 +79,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
     </Compile>
-    <Compile Include="NOTAS.cs">
+    <Compile Include="MODULO.cs">
       <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
     </Compile>
     <Compile Include="PERIODO.cs">
@@ -98,18 +95,27 @@
     <Compile Include="PROVINCIA.cs">
       <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
     </Compile>
+    <Compile Include="RD.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
     <Compile Include="SALON.cs">
       <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
     </Compile>
+    <Compile Include="USUARIO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO_MODULO.cs">
+      <DependentUpon>ModeloSistemaMatriculaCajas.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModeloSistemaMatriculaCajas.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModeloSistemaMatriculaCajas.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

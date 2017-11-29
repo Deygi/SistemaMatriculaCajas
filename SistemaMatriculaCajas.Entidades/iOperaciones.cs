@@ -11,8 +11,8 @@ namespace SistemaMatriculaCajas.Entidades
         List<T> ListarTodos();
 
         bool registrar(T entidad);
-        T consultar(string cod);
+        T consultar(int cod);
         bool actualizar(T entidad);
-        bool eliminar(string cod);
+        bool eliminar(int cod);
     }
 }

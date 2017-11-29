@@ -1,0 +1,5 @@
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb

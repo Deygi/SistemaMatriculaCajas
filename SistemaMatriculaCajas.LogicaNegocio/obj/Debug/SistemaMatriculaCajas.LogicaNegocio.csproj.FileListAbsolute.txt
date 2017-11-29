@@ -1,0 +1,13 @@
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb

@@ -4,49 +4,50 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5d63678ef45f4dcf9873dbdac10026e7" Name="Diagram1">
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.CARRERA_PROFESIONAL" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.COLEGIO" Width="1.5" PointX="3.75" PointY="25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.CURSO" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.DEPARTAMENTO" Width="1.5" PointX="1.5" PointY="31.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.DISTRITO" Width="1.5" PointX="1.5" PointY="24.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.DOCENTE" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.DOCENTE_CURSO" Width="1.5" PointX="5.25" PointY="20.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.ESTUDIANTE" Width="1.5" PointX="10.5" PointY="14" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.EXAMEN" Width="1.5" PointX="10.5" PointY="16.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.HORARIO" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.MATRICULA" Width="1.5" PointX="5.25" PointY="14.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.MODALIDAD" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.NOTAS" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.PERIODO" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.PERSONA" Width="1.5" PointX="6" PointY="24" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.POSTULANTE" Width="1.5" PointX="8.25" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.PROVINCIA" Width="1.5" PointX="1.5" PointY="28" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModelo.SALON" Width="1.5" PointX="3" PointY="20.75" IsExpanded="true" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__CURSO__Cod_Carre__31EC6D26" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__MATRICULA__Cod_C__38996AB5" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__POSTULANT__Cod_C__412EB0B6" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__SALON__Cod_Carre__46E78A0C" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__COLEGIO__Cod_Dis__30F848ED" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__PERSONA__Cod_Col__3F466844" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__HORARIO__Cod_Cur__37A5467C" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__NOTAS__Cod_Curso__3C69FB99" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__PROVINCIA__Cod_D__45F365D3" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__DISTRITO__Cod_Pr__32E0915F" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__PERSONA__Cod_Dis__403A8C7D" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__DOCENTE_C__Cod_D__33D4B598" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__DOCENTE_C__Cod_S__34C8D9D1" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__NOTAS__Cod_Docen__3D5E1FD2" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__ESTUDIANT__Cod_P__35BCFE0A" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__MATRICULA__Cod_E__398D8EEE" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__EXAMEN__Cod_Post__36B12243" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__MATRICULA__Cod_P__3A81B327" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__MATRICULA__Cod_S__3B75D760" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__NOTAS__Cod_Matri__3E52440B" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__POSTULANT__Cod_M__4316F928" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__POSTULANT__Cod_P__440B1D61" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__POSTULANT__Cod_D__4222D4EF" ManuallyRouted="false" />
-        <AssociationConnector Association="SistemaMatriculaCajasModelo.FK__POSTULANT__Cod_S__44FF419A" ManuallyRouted="false" />
+      <Diagram DiagramId="f327c3a460264caca7e82f87905e1f3d" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.CARRERA_PROFESIONAL" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.COLEGIO" Width="1.5" PointX="3.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.CURSO" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.DEPARTAMENTO" Width="1.5" PointX="1.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.DETALLE_RD" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.DISTRITO" Width="1.5" PointX="1.5" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.ESTUDIANTE" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.EXAMEN" Width="1.5" PointX="10.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.HORARIO" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.MATRICULA" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.MODALIDAD" Width="1.5" PointX="6" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.MODULO" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.PERIODO" Width="1.5" PointX="6" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.PERSONA" Width="1.5" PointX="6" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.POSTULANTE" Width="1.5" PointX="8.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.PROVINCIA" Width="1.5" PointX="1.5" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.RD" Width="1.5" PointX="8.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.SALON" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.USUARIO" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.USUARIO_MODULO" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__CURSO__Cod_Carre__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__MATRICULA__Cod_C__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__POSTULANT__Cod_C__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__SALON__Cod_Carre__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__COLEGIO__Cod_Dis__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__PERSONA__Cod_Col__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__HORARIO__Cod_Cur__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__PROVINCIA__Cod_D__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__RD__Cod_Detalle___46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__DISTRITO__Cod_Pr__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__PERSONA__Cod_Dis__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__MATRICULA__Cod_E__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__RD__Cod_Estudian__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__EXAMEN__Cod_Post__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__MATRICULA__Cod_P__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__MATRICULA__Cod_P__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__MATRICULA__Cod_S__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__POSTULANT__Cod_M__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__USUARIO_M__Cod_M__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__POSTULANT__Cod_P__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__POSTULANT__Cod_P__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__POSTULANT__Cod_S__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaMatriculaCajasModel.FK__USUARIO_M__Cod_U__49C3F6B7" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

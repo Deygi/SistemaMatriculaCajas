@@ -20,7 +20,7 @@ namespace SistemaMatriculaCajas.Entidades
             this.POSTULANTE = new HashSet<POSTULANTE>();
         }
     
-        public string Cod_Modalidad { get; set; }
+        public int Cod_Modalidad { get; set; }
         public string Nom_Modalidad { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

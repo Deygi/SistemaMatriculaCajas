@@ -40,7 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogNeg_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaMatriculaCajas.Entidades\SistemaMatriculaCajas.Entidades.csproj">
+      <Project>{778c3f3a-6a3a-4e02-9d48-05fa6405c358}</Project>
+      <Name>SistemaMatriculaCajas.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaMatriculaCajas.Repositorio\SistemaMatriculaCajas.Repositorio.csproj">
+      <Project>{51d20bd1-a345-413f-84ea-6d3a5ba5f7d3}</Project>
+      <Name>SistemaMatriculaCajas.Repositorio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

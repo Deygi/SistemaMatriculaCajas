@@ -6,3 +6,17 @@ C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\ob
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csproj.GenerateResource.Cache
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.exe
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Form1.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU01_Autenticacion.GUI_Login.resources

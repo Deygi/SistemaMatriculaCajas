@@ -10,10 +10,24 @@ namespace SistemaMatriculaCajas.Repositorio
     {
         public bool actualizar(CARRERA_PROFESIONAL entidad)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
+                {
+                    CARRERA_PROFESIONAL carrera_profesional = contexto.CARRERA_PROFESIONAL.SingleOrDefault(x => x.Cod_CarreraP == entidad.Cod_CarreraP);
+                    carrera_profesional.Abrv_CarreraP = entidad.Abrv_CarreraP;
+                    carrera_profesional.Cant_Semestre = entidad.Cant_Semestre;
+                    contexto.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
-        public CARRERA_PROFESIONAL consultar(string cod)
+        public CARRERA_PROFESIONAL consultar(int cod)
         {
             try
             {
@@ -29,7 +43,7 @@ namespace SistemaMatriculaCajas.Repositorio
             }
         }
 
-        public bool eliminar(string cod)
+        public bool eliminar(int cod)
         {
             throw new NotImplementedException();
         }

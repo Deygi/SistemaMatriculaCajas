@@ -21,9 +21,9 @@ namespace SistemaMatriculaCajas.Entidades
             this.PERSONA = new HashSet<PERSONA>();
         }
     
-        public string Cod_Distrito { get; set; }
+        public int Cod_Distrito { get; set; }
         public string Nom_Distrito { get; set; }
-        public string Cod_Provincia { get; set; }
+        public int Cod_Provincia { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<COLEGIO> COLEGIO { get; set; }

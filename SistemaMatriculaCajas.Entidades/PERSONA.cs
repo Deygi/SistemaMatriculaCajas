@@ -20,18 +20,19 @@ namespace SistemaMatriculaCajas.Entidades
             this.POSTULANTE = new HashSet<POSTULANTE>();
         }
     
-        public string Cod_DNI { get; set; }
+        public int Cod_Persona { get; set; }
         public string Ap_Paterno { get; set; }
         public string Ap_Materno { get; set; }
         public string Nom { get; set; }
+        public string Dni { get; set; }
         public byte[] Foto { get; set; }
         public string Sexo { get; set; }
         public Nullable<System.DateTime> FechaNac { get; set; }
         public string Domicilio { get; set; }
         public string Telf_Persona { get; set; }
         public string Correo { get; set; }
-        public string Cod_Colegio { get; set; }
-        public string Cod_Distrito { get; set; }
+        public int Cod_Colegio { get; set; }
+        public int Cod_Distrito { get; set; }
     
         public virtual COLEGIO COLEGIO { get; set; }
         public virtual DISTRITO DISTRITO { get; set; }

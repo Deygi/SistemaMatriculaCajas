@@ -20,9 +20,9 @@ namespace SistemaMatriculaCajas.Entidades
             this.DISTRITO = new HashSet<DISTRITO>();
         }
     
-        public string Cod_Provincia { get; set; }
+        public int Cod_Provincia { get; set; }
         public string Nom_Provincia { get; set; }
-        public string Cod_Dept { get; set; }
+        public int Cod_Dept { get; set; }
     
         public virtual DEPARTAMENTO DEPARTAMENTO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

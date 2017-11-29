@@ -58,8 +58,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HU01-Autenticacion\GUI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HU01-Autenticacion\GUI_Login.Designer.cs">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HU01-Autenticacion\GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,6 +93,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaMatriculaCajas.Entidades\SistemaMatriculaCajas.Entidades.csproj">
+      <Project>{778c3f3a-6a3a-4e02-9d48-05fa6405c358}</Project>
+      <Name>SistemaMatriculaCajas.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaMatriculaCajas.LogicaNegocio\SistemaMatriculaCajas.LogicaNegocio.csproj">
+      <Project>{3516c115-0bc7-452f-ab3a-6ff4371bd6f6}</Project>
+      <Name>SistemaMatriculaCajas.LogicaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

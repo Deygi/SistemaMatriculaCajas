@@ -14,25 +14,20 @@ namespace SistemaMatriculaCajas.Entidades
     
     public partial class MATRICULA
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public MATRICULA()
-        {
-            this.NOTAS = new HashSet<NOTAS>();
-        }
-    
-        public string Cod_Matricula { get; set; }
+        public int Cod_Matricula { get; set; }
         public string Obs { get; set; }
         public Nullable<System.DateTime> Fecha_Matricula { get; set; }
-        public string Cod_Periodo { get; set; }
-        public string Cod_Salon { get; set; }
-        public string Cod_CarreraP { get; set; }
-        public string Cod_Estudiante { get; set; }
+        public string Cursos_Matricula { get; set; }
+        public int Cod_Periodo { get; set; }
+        public int Cod_Salon { get; set; }
+        public int Cod_CarreraP { get; set; }
+        public int Cod_Estudiante { get; set; }
+        public int Cod_Postulante { get; set; }
     
         public virtual CARRERA_PROFESIONAL CARRERA_PROFESIONAL { get; set; }
         public virtual ESTUDIANTE ESTUDIANTE { get; set; }
+        public virtual POSTULANTE POSTULANTE { get; set; }
         public virtual PERIODO PERIODO { get; set; }
         public virtual SALON SALON { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NOTAS> NOTAS { get; set; }
     }
 }

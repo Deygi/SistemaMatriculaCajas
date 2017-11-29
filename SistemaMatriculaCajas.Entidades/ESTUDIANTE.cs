@@ -18,14 +18,17 @@ namespace SistemaMatriculaCajas.Entidades
         public ESTUDIANTE()
         {
             this.MATRICULA = new HashSet<MATRICULA>();
+            this.RD = new HashSet<RD>();
         }
     
-        public string Cod_Estudiante { get; set; }
-        public int Cod_Postulante { get; set; }
-        public string Estado_academico { get; set; }
+        public int Cod_Estudiante { get; set; }
+        public string Ident_Estudiante { get; set; }
+        public string Situacion_Acadm { get; set; }
+        public string Estado_Acadm { get; set; }
     
-        public virtual POSTULANTE POSTULANTE { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MATRICULA> MATRICULA { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RD> RD { get; set; }
     }
 }

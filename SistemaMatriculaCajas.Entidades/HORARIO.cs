@@ -18,7 +18,7 @@ namespace SistemaMatriculaCajas.Entidades
         public string Dias { get; set; }
         public System.TimeSpan H_Inici { get; set; }
         public System.TimeSpan H_Fin { get; set; }
-        public string Cod_Curso { get; set; }
+        public int Cod_Curso { get; set; }
     
         public virtual CURSO CURSO { get; set; }
     }

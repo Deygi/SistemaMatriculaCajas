@@ -23,7 +23,7 @@ namespace SistemaMatriculaCajas.Entidades
             this.SALON = new HashSet<SALON>();
         }
     
-        public string Cod_CarreraP { get; set; }
+        public int Cod_CarreraP { get; set; }
         public string Nom_CarreraP { get; set; }
         public string Abrv_CarreraP { get; set; }
         public int Cant_Semestre { get; set; }

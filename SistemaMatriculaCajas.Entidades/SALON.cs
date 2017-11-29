@@ -17,18 +17,15 @@ namespace SistemaMatriculaCajas.Entidades
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SALON()
         {
-            this.DOCENTE_CURSO = new HashSet<DOCENTE_CURSO>();
             this.MATRICULA = new HashSet<MATRICULA>();
             this.POSTULANTE = new HashSet<POSTULANTE>();
         }
     
-        public string Cod_Salon { get; set; }
+        public int Cod_Salon { get; set; }
         public Nullable<int> Cant_Asientos { get; set; }
-        public string Cod_CarreraP { get; set; }
+        public int Cod_CarreraP { get; set; }
     
         public virtual CARRERA_PROFESIONAL CARRERA_PROFESIONAL { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DOCENTE_CURSO> DOCENTE_CURSO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MATRICULA> MATRICULA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -21,7 +21,7 @@ namespace SistemaMatriculaCajas.Entidades
             this.POSTULANTE = new HashSet<POSTULANTE>();
         }
     
-        public string Cod_Periodo { get; set; }
+        public int Cod_Periodo { get; set; }
         public System.DateTime Ini_Semestre { get; set; }
         public System.DateTime Fin_Semestre { get; set; }
         public System.DateTime Recuperacion { get; set; }

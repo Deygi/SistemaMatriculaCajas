@@ -1,0 +1,13 @@
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.dll
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.pdb

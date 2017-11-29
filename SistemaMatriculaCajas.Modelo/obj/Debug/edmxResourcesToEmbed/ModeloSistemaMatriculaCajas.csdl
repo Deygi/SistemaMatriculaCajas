@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaMatriculaCajasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CARRERA_PROFESIONAL">
+    <Key>
+      <PropertyRef Name="Cod_CarreraP" />
+    </Key>
+    <Property Name="Cod_CarreraP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_CarreraP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Abrv_CarreraP" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Cant_Semestre" Type="Int32" Nullable="false" />
+    <Property Name="Cant_Vacantes_D" Type="Int32" Nullable="false" />
+    <Property Name="Cant_Vacantes_V" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CURSO" Relationship="Self.FK__CURSO__Cod_Carre__35BCFE0A" FromRole="CARRERA_PROFESIONAL" ToRole="CURSO" />
+    <NavigationProperty Name="MATRICULA" Relationship="Self.FK__MATRICULA__Cod_C__398D8EEE" FromRole="CARRERA_PROFESIONAL" ToRole="MATRICULA" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__POSTULANT__Cod_C__403A8C7D" FromRole="CARRERA_PROFESIONAL" ToRole="POSTULANTE" />
+    <NavigationProperty Name="SALON" Relationship="Self.FK__SALON__Cod_Carre__47DBAE45" FromRole="CARRERA_PROFESIONAL" ToRole="SALON" />
+  </EntityType>
+  <EntityType Name="COLEGIO">
+    <Key>
+      <PropertyRef Name="Cod_Colegio" />
+    </Key>
+    <Property Name="Cod_Colegio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Colegio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cod_Distrito" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DISTRITO" Relationship="Self.FK__COLEGIO__Cod_Dis__34C8D9D1" FromRole="COLEGIO" ToRole="DISTRITO" />
+    <NavigationProperty Name="PERSONA" Relationship="Self.FK__PERSONA__Cod_Col__3E52440B" FromRole="COLEGIO" ToRole="PERSONA" />
+  </EntityType>
+  <EntityType Name="CURSO">
+    <Key>
+      <PropertyRef Name="Cod_Curso" />
+    </Key>
+    <Property Name="Cod_Curso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Curso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Alias_Curso" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Cant_Crd" Type="Int32" Nullable="false" />
+    <Property Name="Semestre" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cod_CarreraP" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CARRERA_PROFESIONAL" Relationship="Self.FK__CURSO__Cod_Carre__35BCFE0A" FromRole="CURSO" ToRole="CARRERA_PROFESIONAL" />
+    <NavigationProperty Name="HORARIO" Relationship="Self.FK__HORARIO__Cod_Cur__38996AB5" FromRole="CURSO" ToRole="HORARIO" />
+  </EntityType>
+  <EntityType Name="DEPARTAMENTO">
+    <Key>
+      <PropertyRef Name="Cod_Dept" />
+    </Key>
+    <Property Name="Cod_Dept" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="PROVINCIA" Relationship="Self.FK__PROVINCIA__Cod_D__44FF419A" FromRole="DEPARTAMENTO" ToRole="PROVINCIA" />
+  </EntityType>
+  <EntityType Name="DETALLE_RD">
+    <Key>
+      <PropertyRef Name="Cod_Detalle_RD" />
+    </Key>
+    <Property Name="Cod_Detalle_RD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo_RD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="RD" Relationship="Self.FK__RD__Cod_Detalle___46E78A0C" FromRole="DETALLE_RD" ToRole="RD" />
+  </EntityType>
+  <EntityType Name="DISTRITO">
+    <Key>
+      <PropertyRef Name="Cod_Distrito" />
+    </Key>
+    <Property Name="Cod_Distrito" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Distrito" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cod_Provincia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="COLEGIO" Relationship="Self.FK__COLEGIO__Cod_Dis__34C8D9D1" FromRole="DISTRITO" ToRole="COLEGIO" />
+    <NavigationProperty Name="PROVINCIA" Relationship="Self.FK__DISTRITO__Cod_Pr__36B12243" FromRole="DISTRITO" ToRole="PROVINCIA" />
+    <NavigationProperty Name="PERSONA" Relationship="Self.FK__PERSONA__Cod_Dis__3F466844" FromRole="DISTRITO" ToRole="PERSONA" />
+  </EntityType>
+  <EntityType Name="ESTUDIANTE">
+    <Key>
+      <PropertyRef Name="Cod_Estudiante" />
+    </Key>
+    <Property Name="Cod_Estudiante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ident_Estudiante" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Situacion_Acadm" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Estado_Acadm" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="MATRICULA" Relationship="Self.FK__MATRICULA__Cod_E__3A81B327" FromRole="ESTUDIANTE" ToRole="MATRICULA" />
+    <NavigationProperty Name="RD" Relationship="Self.FK__RD__Cod_Estudian__45F365D3" FromRole="ESTUDIANTE" ToRole="RD" />
+  </EntityType>
+  <EntityType Name="EXAMEN">
+    <Key>
+      <PropertyRef Name="Cod_Examen" />
+    </Key>
+    <Property Name="Cod_Examen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Puntaje" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Postulante" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__EXAMEN__Cod_Post__37A5467C" FromRole="EXAMEN" ToRole="POSTULANTE" />
+  </EntityType>
+  <EntityType Name="HORARIO">
+    <Key>
+      <PropertyRef Name="Cod_Horario" />
+    </Key>
+    <Property Name="Cod_Horario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dias" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="H_Inici" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="H_Fin" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Cod_Curso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CURSO" Relationship="Self.FK__HORARIO__Cod_Cur__38996AB5" FromRole="HORARIO" ToRole="CURSO" />
+  </EntityType>
+  <EntityType Name="MATRICULA">
+    <Key>
+      <PropertyRef Name="Cod_Matricula" />
+    </Key>
+    <Property Name="Cod_Matricula" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Obs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Matricula" Type="DateTime" Precision="0" />
+    <Property Name="Cursos_Matricula" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Cod_Periodo" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Salon" Type="Int32" Nullable="false" />
+    <Property Name="Cod_CarreraP" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Estudiante" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Postulante" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CARRERA_PROFESIONAL" Relationship="Self.FK__MATRICULA__Cod_C__398D8EEE" FromRole="MATRICULA" ToRole="CARRERA_PROFESIONAL" />
+    <NavigationProperty Name="ESTUDIANTE" Relationship="Self.FK__MATRICULA__Cod_E__3A81B327" FromRole="MATRICULA" ToRole="ESTUDIANTE" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__MATRICULA__Cod_P__3B75D760" FromRole="MATRICULA" ToRole="POSTULANTE" />
+    <NavigationProperty Name="PERIODO" Relationship="Self.FK__MATRICULA__Cod_P__3C69FB99" FromRole="MATRICULA" ToRole="PERIODO" />
+    <NavigationProperty Name="SALON" Relationship="Self.FK__MATRICULA__Cod_S__3D5E1FD2" FromRole="MATRICULA" ToRole="SALON" />
+  </EntityType>
+  <EntityType Name="MODALIDAD">
+    <Key>
+      <PropertyRef Name="Cod_Modalidad" />
+    </Key>
+    <Property Name="Cod_Modalidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Modalidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__POSTULANT__Cod_M__4222D4EF" FromRole="MODALIDAD" ToRole="POSTULANTE" />
+  </EntityType>
+  <EntityType Name="MODULO">
+    <Key>
+      <PropertyRef Name="Cod_Modulo" />
+    </Key>
+    <Property Name="Cod_Modulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Modulo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="USUARIO_MODULO" Relationship="Self.FK__USUARIO_M__Cod_M__48CFD27E" FromRole="MODULO" ToRole="USUARIO_MODULO" />
+  </EntityType>
+  <EntityType Name="PERIODO">
+    <Key>
+      <PropertyRef Name="Cod_Periodo" />
+    </Key>
+    <Property Name="Cod_Periodo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ini_Semestre" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fin_Semestre" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Recuperacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Ini_Matricula" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="MATRICULA" Relationship="Self.FK__MATRICULA__Cod_P__3C69FB99" FromRole="PERIODO" ToRole="MATRICULA" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__POSTULANT__Cod_P__4316F928" FromRole="PERIODO" ToRole="POSTULANTE" />
+  </EntityType>
+  <EntityType Name="PERSONA">
+    <Key>
+      <PropertyRef Name="Cod_Persona" />
+    </Key>
+    <Property Name="Cod_Persona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ap_Paterno" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ap_Materno" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaNac" Type="DateTime" Precision="0" />
+    <Property Name="Domicilio" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Telf_Persona" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Cod_Colegio" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Distrito" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="COLEGIO" Relationship="Self.FK__PERSONA__Cod_Col__3E52440B" FromRole="PERSONA" ToRole="COLEGIO" />
+    <NavigationProperty Name="DISTRITO" Relationship="Self.FK__PERSONA__Cod_Dis__3F466844" FromRole="PERSONA" ToRole="DISTRITO" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__POSTULANT__Cod_P__412EB0B6" FromRole="PERSONA" ToRole="POSTULANTE" />
+  </EntityType>
+  <EntityType Name="POSTULANTE">
+    <Key>
+      <PropertyRef Name="Cod_Postulante" />
+    </Key>
+    <Property Name="Cod_Postulante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Inscripcion" Type="DateTime" Precision="0" />
+    <Property Name="Cod_Persona" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Salon" Type="Int32" Nullable="false" />
+    <Property Name="Cod_CarreraP" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Periodo" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Modalidad" Type="Int32" Nullable="false" />
+    <Property Name="Turno" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CARRERA_PROFESIONAL" Relationship="Self.FK__POSTULANT__Cod_C__403A8C7D" FromRole="POSTULANTE" ToRole="CARRERA_PROFESIONAL" />
+    <NavigationProperty Name="EXAMEN" Relationship="Self.FK__EXAMEN__Cod_Post__37A5467C" FromRole="POSTULANTE" ToRole="EXAMEN" />
+    <NavigationProperty Name="MATRICULA" Relationship="Self.FK__MATRICULA__Cod_P__3B75D760" FromRole="POSTULANTE" ToRole="MATRICULA" />
+    <NavigationProperty Name="MODALIDAD" Relationship="Self.FK__POSTULANT__Cod_M__4222D4EF" FromRole="POSTULANTE" ToRole="MODALIDAD" />
+    <NavigationProperty Name="PERIODO" Relationship="Self.FK__POSTULANT__Cod_P__4316F928" FromRole="POSTULANTE" ToRole="PERIODO" />
+    <NavigationProperty Name="PERSONA" Relationship="Self.FK__POSTULANT__Cod_P__412EB0B6" FromRole="POSTULANTE" ToRole="PERSONA" />
+    <NavigationProperty Name="SALON" Relationship="Self.FK__POSTULANT__Cod_S__440B1D61" FromRole="POSTULANTE" ToRole="SALON" />
+  </EntityType>
+  <EntityType Name="PROVINCIA">
+    <Key>
+      <PropertyRef Name="Cod_Provincia" />
+    </Key>
+    <Property Name="Cod_Provincia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Provincia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cod_Dept" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DEPARTAMENTO" Relationship="Self.FK__PROVINCIA__Cod_D__44FF419A" FromRole="PROVINCIA" ToRole="DEPARTAMENTO" />
+    <NavigationProperty Name="DISTRITO" Relationship="Self.FK__DISTRITO__Cod_Pr__36B12243" FromRole="PROVINCIA" ToRole="DISTRITO" />
+  </EntityType>
+  <EntityType Name="RD">
+    <Key>
+      <PropertyRef Name="Cod_RD" />
+    </Key>
+    <Property Name="Cod_RD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Estudiante" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Detalle_RD" Type="Int32" />
+    <Property Name="RD_Doc" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Fecha_Carga" Type="DateTime" Precision="0" />
+    <Property Name="Fecha_Emision" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="DETALLE_RD" Relationship="Self.FK__RD__Cod_Detalle___46E78A0C" FromRole="RD" ToRole="DETALLE_RD" />
+    <NavigationProperty Name="ESTUDIANTE" Relationship="Self.FK__RD__Cod_Estudian__45F365D3" FromRole="RD" ToRole="ESTUDIANTE" />
+  </EntityType>
+  <EntityType Name="SALON">
+    <Key>
+      <PropertyRef Name="Cod_Salon" />
+    </Key>
+    <Property Name="Cod_Salon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cant_Asientos" Type="Int32" />
+    <Property Name="Cod_CarreraP" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CARRERA_PROFESIONAL" Relationship="Self.FK__SALON__Cod_Carre__47DBAE45" FromRole="SALON" ToRole="CARRERA_PROFESIONAL" />
+    <NavigationProperty Name="MATRICULA" Relationship="Self.FK__MATRICULA__Cod_S__3D5E1FD2" FromRole="SALON" ToRole="MATRICULA" />
+    <NavigationProperty Name="POSTULANTE" Relationship="Self.FK__POSTULANT__Cod_S__440B1D61" FromRole="SALON" ToRole="POSTULANTE" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="Cod_Usuario" />
+    </Key>
+    <Property Name="Cod_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apll_Paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apll_Materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dni_Usuario" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pass_Usuario" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="USUARIO_MODULO" Relationship="Self.FK__USUARIO_M__Cod_U__49C3F6B7" FromRole="USUARIO" ToRole="USUARIO_MODULO" />
+  </EntityType>
+  <EntityType Name="USUARIO_MODULO">
+    <Key>
+      <PropertyRef Name="Cod_USM" />
+    </Key>
+    <Property Name="Cod_USM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cod_Usuario" Type="Int32" Nullable="false" />
+    <Property Name="Cod_Modulo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MODULO" Relationship="Self.FK__USUARIO_M__Cod_M__48CFD27E" FromRole="USUARIO_MODULO" ToRole="MODULO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.FK__USUARIO_M__Cod_U__49C3F6B7" FromRole="USUARIO_MODULO" ToRole="USUARIO" />
+  </EntityType>
+  <Association Name="FK__CURSO__Cod_Carre__35BCFE0A">
+    <End Role="CARRERA_PROFESIONAL" Type="Self.CARRERA_PROFESIONAL" Multiplicity="1" />
+    <End Role="CURSO" Type="Self.CURSO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARRERA_PROFESIONAL">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Principal>
+      <Dependent Role="CURSO">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MATRICULA__Cod_C__398D8EEE">
+    <End Role="CARRERA_PROFESIONAL" Type="Self.CARRERA_PROFESIONAL" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Self.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARRERA_PROFESIONAL">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__POSTULANT__Cod_C__403A8C7D">
+    <End Role="CARRERA_PROFESIONAL" Type="Self.CARRERA_PROFESIONAL" Multiplicity="1" />
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARRERA_PROFESIONAL">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Principal>
+      <Dependent Role="POSTULANTE">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SALON__Cod_Carre__47DBAE45">
+    <End Role="CARRERA_PROFESIONAL" Type="Self.CARRERA_PROFESIONAL" Multiplicity="1" />
+    <End Role="SALON" Type="Self.SALON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARRERA_PROFESIONAL">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Principal>
+      <Dependent Role="SALON">
+        <PropertyRef Name="Cod_CarreraP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__COLEGIO__Cod_Dis__34C8D9D1">
+    <End Role="DISTRITO" Type="Self.DISTRITO" Multiplicity="1" />
+    <End Role="COLEGIO" Type="Self.COLEGIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DISTRITO">
+        <PropertyRef Name="Cod_Distrito" />
+      </Principal>
+      <Dependent Role="COLEGIO">
+        <PropertyRef Name="Cod_Distrito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PERSONA__Cod_Col__3E52440B">
+    <End Role="COLEGIO" Type="Self.COLEGIO" Multiplicity="1" />
+    <End Role="PERSONA" Type="Self.PERSONA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="COLEGIO">
+        <PropertyRef Name="Cod_Colegio" />
+      </Principal>
+      <Dependent Role="PERSONA">
+        <PropertyRef Name="Cod_Colegio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HORARIO__Cod_Cur__38996AB5">
+    <End Role="CURSO" Type="Self.CURSO" Multiplicity="1" />
+    <End Role="HORARIO" Type="Self.HORARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CURSO">
+        <PropertyRef Name="Cod_Curso" />
+      </Principal>
+      <Dependent Role="HORARIO">
+        <PropertyRef Name="Cod_Curso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PROVINCIA__Cod_D__44FF419A">
+    <End Role="DEPARTAMENTO" Type="Self.DEPARTAMENTO" Multiplicity="1" />
+    <End Role="PROVINCIA" Type="Self.PROVINCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="Cod_Dept" />
+      </Principal>
+      <Dependent Role="PROVINCIA">
+        <PropertyRef Name="Cod_Dept" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RD__Cod_Detalle___46E78A0C">
+    <End Role="DETALLE_RD" Type="Self.DETALLE_RD" Multiplicity="0..1" />
+    <End Role="RD" Type="Self.RD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DETALLE_RD">
+        <PropertyRef Name="Cod_Detalle_RD" />
+      </Principal>
+      <Dependent Role="RD">
+        <PropertyRef Name="Cod_Detalle_RD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DISTRITO__Cod_Pr__36B12243">
+    <End Role="PROVINCIA" Type="Self.PROVINCIA" Multiplicity="1" />
+    <End Role="DISTRITO" Type="Self.DISTRITO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVINCIA">
+        <PropertyRef Name="Cod_Provincia" />
+      </Principal>
+      <Dependent Role="DISTRITO">
+        <PropertyRef Name="Cod_Provincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PERSONA__Cod_Dis__3F466844">
+    <End Role="DISTRITO" Type="Self.DISTRITO" Multiplicity="1" />
+    <End Role="PERSONA" Type="Self.PERSONA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DISTRITO">
+        <PropertyRef Name="Cod_Distrito" />
+      </Principal>
+      <Dependent Role="PERSONA">
+        <PropertyRef Name="Cod_Distrito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MATRICULA__Cod_E__3A81B327">
+    <End Role="ESTUDIANTE" Type="Self.ESTUDIANTE" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Self.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTUDIANTE">
+        <PropertyRef Name="Cod_Estudiante" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="Cod_Estudiante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RD__Cod_Estudian__45F365D3">
+    <End Role="ESTUDIANTE" Type="Self.ESTUDIANTE" Multiplicity="1" />
+    <End Role="RD" Type="Self.RD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTUDIANTE">
+        <PropertyRef Name="Cod_Estudiante" />
+      </Principal>
+      <Dependent Role="RD">
+        <PropertyRef Name="Cod_Estudiante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EXAMEN__Cod_Post__37A5467C">
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="1" />
+    <End Role="EXAMEN" Type="Self.EXAMEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="POSTULANTE">
+        <PropertyRef Name="Cod_Postulante" />
+      </Principal>
+      <Dependent Role="EXAMEN">
+        <PropertyRef Name="Cod_Postulante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MATRICULA__Cod_P__3B75D760">
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Self.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="POSTULANTE">
+        <PropertyRef Name="Cod_Postulante" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="Cod_Postulante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MATRICULA__Cod_P__3C69FB99">
+    <End Role="PERIODO" Type="Self.PERIODO" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Self.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERIODO">
+        <PropertyRef Name="Cod_Periodo" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="Cod_Periodo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MATRICULA__Cod_S__3D5E1FD2">
+    <End Role="SALON" Type="Self.SALON" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Self.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SALON">
+        <PropertyRef Name="Cod_Salon" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="Cod_Salon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__POSTULANT__Cod_M__4222D4EF">
+    <End Role="MODALIDAD" Type="Self.MODALIDAD" Multiplicity="1" />
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MODALIDAD">
+        <PropertyRef Name="Cod_Modalidad" />
+      </Principal>
+      <Dependent Role="POSTULANTE">
+        <PropertyRef Name="Cod_Modalidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__USUARIO_M__Cod_M__48CFD27E">
+    <End Role="MODULO" Type="Self.MODULO" Multiplicity="1" />
+    <End Role="USUARIO_MODULO" Type="Self.USUARIO_MODULO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MODULO">
+        <PropertyRef Name="Cod_Modulo" />
+      </Principal>
+      <Dependent Role="USUARIO_MODULO">
+        <PropertyRef Name="Cod_Modulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__POSTULANT__Cod_P__4316F928">
+    <End Role="PERIODO" Type="Self.PERIODO" Multiplicity="1" />
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERIODO">
+        <PropertyRef Name="Cod_Periodo" />
+      </Principal>
+      <Dependent Role="POSTULANTE">
+        <PropertyRef Name="Cod_Periodo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__POSTULANT__Cod_P__412EB0B6">
+    <End Role="PERSONA" Type="Self.PERSONA" Multiplicity="1" />
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERSONA">
+        <PropertyRef Name="Cod_Persona" />
+      </Principal>
+      <Dependent Role="POSTULANTE">
+        <PropertyRef Name="Cod_Persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__POSTULANT__Cod_S__440B1D61">
+    <End Role="SALON" Type="Self.SALON" Multiplicity="1" />
+    <End Role="POSTULANTE" Type="Self.POSTULANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SALON">
+        <PropertyRef Name="Cod_Salon" />
+      </Principal>
+      <Dependent Role="POSTULANTE">
+        <PropertyRef Name="Cod_Salon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__USUARIO_M__Cod_U__49C3F6B7">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="USUARIO_MODULO" Type="Self.USUARIO_MODULO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="Cod_Usuario" />
+      </Principal>
+      <Dependent Role="USUARIO_MODULO">
+        <PropertyRef Name="Cod_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaMatriculaCajasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CARRERA_PROFESIONAL" EntityType="Self.CARRERA_PROFESIONAL" />
+    <EntitySet Name="COLEGIO" EntityType="Self.COLEGIO" />
+    <EntitySet Name="CURSO" EntityType="Self.CURSO" />
+    <EntitySet Name="DEPARTAMENTO" EntityType="Self.DEPARTAMENTO" />
+    <EntitySet Name="DETALLE_RD" EntityType="Self.DETALLE_RD" />
+    <EntitySet Name="DISTRITO" EntityType="Self.DISTRITO" />
+    <EntitySet Name="ESTUDIANTE" EntityType="Self.ESTUDIANTE" />
+    <EntitySet Name="EXAMEN" EntityType="Self.EXAMEN" />
+    <EntitySet Name="HORARIO" EntityType="Self.HORARIO" />
+    <EntitySet Name="MATRICULA" EntityType="Self.MATRICULA" />
+    <EntitySet Name="MODALIDAD" EntityType="Self.MODALIDAD" />
+    <EntitySet Name="MODULO" EntityType="Self.MODULO" />
+    <EntitySet Name="PERIODO" EntityType="Self.PERIODO" />
+    <EntitySet Name="PERSONA" EntityType="Self.PERSONA" />
+    <EntitySet Name="POSTULANTE" EntityType="Self.POSTULANTE" />
+    <EntitySet Name="PROVINCIA" EntityType="Self.PROVINCIA" />
+    <EntitySet Name="RD" EntityType="Self.RD" />
+    <EntitySet Name="SALON" EntityType="Self.SALON" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" />
+    <EntitySet Name="USUARIO_MODULO" EntityType="Self.USUARIO_MODULO" />
+    <AssociationSet Name="FK__CURSO__Cod_Carre__35BCFE0A" Association="Self.FK__CURSO__Cod_Carre__35BCFE0A">
+      <End Role="CARRERA_PROFESIONAL" EntitySet="CARRERA_PROFESIONAL" />
+      <End Role="CURSO" EntitySet="CURSO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MATRICULA__Cod_C__398D8EEE" Association="Self.FK__MATRICULA__Cod_C__398D8EEE">
+      <End Role="CARRERA_PROFESIONAL" EntitySet="CARRERA_PROFESIONAL" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__POSTULANT__Cod_C__403A8C7D" Association="Self.FK__POSTULANT__Cod_C__403A8C7D">
+      <End Role="CARRERA_PROFESIONAL" EntitySet="CARRERA_PROFESIONAL" />
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SALON__Cod_Carre__47DBAE45" Association="Self.FK__SALON__Cod_Carre__47DBAE45">
+      <End Role="CARRERA_PROFESIONAL" EntitySet="CARRERA_PROFESIONAL" />
+      <End Role="SALON" EntitySet="SALON" />
+    </AssociationSet>
+    <AssociationSet Name="FK__COLEGIO__Cod_Dis__34C8D9D1" Association="Self.FK__COLEGIO__Cod_Dis__34C8D9D1">
+      <End Role="DISTRITO" EntitySet="DISTRITO" />
+      <End Role="COLEGIO" EntitySet="COLEGIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PERSONA__Cod_Col__3E52440B" Association="Self.FK__PERSONA__Cod_Col__3E52440B">
+      <End Role="COLEGIO" EntitySet="COLEGIO" />
+      <End Role="PERSONA" EntitySet="PERSONA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HORARIO__Cod_Cur__38996AB5" Association="Self.FK__HORARIO__Cod_Cur__38996AB5">
+      <End Role="CURSO" EntitySet="CURSO" />
+      <End Role="HORARIO" EntitySet="HORARIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PROVINCIA__Cod_D__44FF419A" Association="Self.FK__PROVINCIA__Cod_D__44FF419A">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
+      <End Role="PROVINCIA" EntitySet="PROVINCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RD__Cod_Detalle___46E78A0C" Association="Self.FK__RD__Cod_Detalle___46E78A0C">
+      <End Role="DETALLE_RD" EntitySet="DETALLE_RD" />
+      <End Role="RD" EntitySet="RD" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DISTRITO__Cod_Pr__36B12243" Association="Self.FK__DISTRITO__Cod_Pr__36B12243">
+      <End Role="PROVINCIA" EntitySet="PROVINCIA" />
+      <End Role="DISTRITO" EntitySet="DISTRITO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PERSONA__Cod_Dis__3F466844" Association="Self.FK__PERSONA__Cod_Dis__3F466844">
+      <End Role="DISTRITO" EntitySet="DISTRITO" />
+      <End Role="PERSONA" EntitySet="PERSONA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MATRICULA__Cod_E__3A81B327" Association="Self.FK__MATRICULA__Cod_E__3A81B327">
+      <End Role="ESTUDIANTE" EntitySet="ESTUDIANTE" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RD__Cod_Estudian__45F365D3" Association="Self.FK__RD__Cod_Estudian__45F365D3">
+      <End Role="ESTUDIANTE" EntitySet="ESTUDIANTE" />
+      <End Role="RD" EntitySet="RD" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EXAMEN__Cod_Post__37A5467C" Association="Self.FK__EXAMEN__Cod_Post__37A5467C">
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+      <End Role="EXAMEN" EntitySet="EXAMEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MATRICULA__Cod_P__3B75D760" Association="Self.FK__MATRICULA__Cod_P__3B75D760">
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MATRICULA__Cod_P__3C69FB99" Association="Self.FK__MATRICULA__Cod_P__3C69FB99">
+      <End Role="PERIODO" EntitySet="PERIODO" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MATRICULA__Cod_S__3D5E1FD2" Association="Self.FK__MATRICULA__Cod_S__3D5E1FD2">
+      <End Role="SALON" EntitySet="SALON" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__POSTULANT__Cod_M__4222D4EF" Association="Self.FK__POSTULANT__Cod_M__4222D4EF">
+      <End Role="MODALIDAD" EntitySet="MODALIDAD" />
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__USUARIO_M__Cod_M__48CFD27E" Association="Self.FK__USUARIO_M__Cod_M__48CFD27E">
+      <End Role="MODULO" EntitySet="MODULO" />
+      <End Role="USUARIO_MODULO" EntitySet="USUARIO_MODULO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__POSTULANT__Cod_P__4316F928" Association="Self.FK__POSTULANT__Cod_P__4316F928">
+      <End Role="PERIODO" EntitySet="PERIODO" />
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__POSTULANT__Cod_P__412EB0B6" Association="Self.FK__POSTULANT__Cod_P__412EB0B6">
+      <End Role="PERSONA" EntitySet="PERSONA" />
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__POSTULANT__Cod_S__440B1D61" Association="Self.FK__POSTULANT__Cod_S__440B1D61">
+      <End Role="SALON" EntitySet="SALON" />
+      <End Role="POSTULANTE" EntitySet="POSTULANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__USUARIO_M__Cod_U__49C3F6B7" Association="Self.FK__USUARIO_M__Cod_U__49C3F6B7">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="USUARIO_MODULO" EntitySet="USUARIO_MODULO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
