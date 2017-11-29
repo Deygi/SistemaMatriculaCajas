@@ -32,6 +32,7 @@ namespace SistemaMatriculaCajas.Repositorio
         }
         /// hola chico
         /// Daysi Jlores
+        /// Testeo multiple
 
 
         public USUARIO consultar(int cod)
