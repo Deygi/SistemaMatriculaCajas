@@ -47,3 +47,6 @@ C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\ob
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario.resources
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.UserControlPrincipal.resources
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.Form_NuevoUsuario.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.exe.config
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.exe
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.pdb
