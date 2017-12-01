@@ -14,7 +14,8 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 {
     public partial class Form_GestionUsuario : Form
     {
-        USUARIO_MODULO u_Modul;
+        USUARIO_MODULO u_Modulo;
+        private bool actualiza = false;
 
         public Form_GestionUsuario()
         {
@@ -30,7 +31,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         {
             listarUsuarios();
             ListarModulos();
-            
+
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -88,10 +89,12 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private void ListarModulos()
         {
             List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
-            foreach(var modulos in ListarModulos)
+            foreach (var modulos in ListarModulos)
             {
                 listBoxTodos.Items.Add(modulos.Cod_Modulo + modulos.Nom_Modulo);
             }
+
+            
         }
         private void listarUsuarios()
         {
@@ -99,8 +102,30 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             foreach (var usuario in listaUsuarios)
             {
                 comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
-            }          
+            }
         }
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            #region Verificar lista de permisos actuales
+            if (string.IsNullOrEmpty(listBoxActual.Items.ToString()))
+            {
+                errorProvider1.SetError(listBoxActual, "No esta selecciondado ningun permiso");
+                return;
+            }
+            else
+            {
+                errorProvider1.Clear();
+                return;
+            }
+            #endregion
+            if (!actualiza)
+            {
+                
+            }
+            else
+            {
 
+            }
+        }
     }
 }

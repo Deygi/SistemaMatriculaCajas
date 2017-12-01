@@ -8,3 +8,8 @@ C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\bin\Debug
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
+D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb

@@ -24,3 +24,16 @@ C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.LogicaNegocio\bin\D
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\EntityFramework.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\bin\Debug\EntityFramework.xml
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.csprojResolveAssemblyReference.cache
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.LogicaNegocio\obj\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb
