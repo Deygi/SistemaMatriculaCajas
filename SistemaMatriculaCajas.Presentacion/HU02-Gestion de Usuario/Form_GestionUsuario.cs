@@ -28,7 +28,9 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
         private void Form_GestionUsuario_Load(object sender, EventArgs e)
         {
-
+            listarUsuarios();
+            ListarModulos();
+            
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -85,7 +87,20 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         #endregion
         private void ListarModulos()
         {
-            List<MODULO> Listarmodulos = new List<MODULO>.listarTodos();
+            List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
+            foreach(var modulos in ListarModulos)
+            {
+                listBoxTodos.Items.Add(modulos.Cod_Modulo + modulos.Nom_Modulo);
+            }
         }
+        private void listarUsuarios()
+        {
+            List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            foreach (var usuario in listaUsuarios)
+            {
+                comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
+            }          
+        }
+
     }
 }
