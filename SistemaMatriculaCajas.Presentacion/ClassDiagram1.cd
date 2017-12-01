@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SistemaMatriculaCajas.Presentacion.HU01_Autenticacion.GUI_Login">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAACCAAAJAABACAAgACAAABAIAAAAAAAQBAAAg=</HashCode>
+      <FileName>HU01-Autenticacion\GUI_Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -17,7 +17,9 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             InitializeComponent();
         }
 
-        private void btnNuwvoUsuario_Click(object sender, EventArgs e)
+      
+
+        private void btnNuwvoUsuario_Click_1(object sender, EventArgs e)
         {
             Form_NuevoUsuario nuevoUser = new Form_NuevoUsuario();
             nuevoUser.ShowDialog();

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnListarUsuario = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnNuwvoUsuario = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.btnListarUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNuwvoUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,15 +46,15 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "GESTION DE USUARIO";
             // 
-            // btnListarUsuario
+            // pictureBox2
             // 
-            this.btnListarUsuario.Image = global::SistemaMatriculaCajas.Presentacion.Properties.Resources.list__2_;
-            this.btnListarUsuario.Location = new System.Drawing.Point(546, 229);
-            this.btnListarUsuario.Name = "btnListarUsuario";
-            this.btnListarUsuario.Size = new System.Drawing.Size(256, 256);
-            this.btnListarUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnListarUsuario.TabIndex = 6;
-            this.btnListarUsuario.TabStop = false;
+            this.pictureBox2.Image = global::SistemaMatriculaCajas.Presentacion.Properties.Resources.list__2_;
+            this.pictureBox2.Location = new System.Drawing.Point(546, 229);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // btnNuwvoUsuario
             // 
@@ -65,18 +65,18 @@
             this.btnNuwvoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.btnNuwvoUsuario.TabIndex = 5;
             this.btnNuwvoUsuario.TabStop = false;
-            this.btnNuwvoUsuario.Click += new System.EventHandler(this.btnNuwvoUsuario_Click);
+            this.btnNuwvoUsuario.Click += new System.EventHandler(this.btnNuwvoUsuario_Click_1);
             // 
             // UserControlGestionUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnListarUsuario);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnNuwvoUsuario);
             this.Controls.Add(this.label1);
             this.Name = "UserControlGestionUsuario";
             this.Size = new System.Drawing.Size(984, 728);
-            ((System.ComponentModel.ISupportInitialize)(this.btnListarUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNuwvoUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,6 +87,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnNuwvoUsuario;
-        private System.Windows.Forms.PictureBox btnListarUsuario;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

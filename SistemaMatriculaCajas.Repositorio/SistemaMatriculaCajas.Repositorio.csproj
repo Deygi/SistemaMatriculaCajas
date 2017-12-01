@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcData_Carrera_Profesional.cs" />
+    <Compile Include="AcData_Modulo.cs" />
     <Compile Include="AcData_Usuario.cs" />
+    <Compile Include="AcData_Usuario_Modulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
