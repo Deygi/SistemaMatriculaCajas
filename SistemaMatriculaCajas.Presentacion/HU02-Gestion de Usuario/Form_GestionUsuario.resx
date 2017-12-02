@@ -524,4 +524,17 @@
   <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>891, -4</value>
   </metadata>
+  <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4QsPCy85fzMcRAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE4SURBVFhH
+        xZfrbsIwFIMrnnE3GNfHQjxli1R+rCizI2crIdp6SXMsAaU+8WcJBEnlnFvdmubcXq8vVSGRRSbZFS4u
+        bdM4PL5gvGpmMZHhWWCSzQInvLmXKNGHk0m2NxIl3ryRUcz02TE8CDeONDSQtUQCfpT1qKhEh4XvsiaL
+        GT7rP3gQBg4c1IJZJRLwg6y/lSjxIWuwuMavHQsPutX1ngsVMKrEExxZssZpSols8CAE7BikwK6t67Ws
+        J9HzM7/wnax5GlJiMXgQArcMFqDD+40sehvek0f4VlZepUoUgwcB8NkD8vXnmp7GllVUoiycMi0Qwct+
+        BADYfQlTcFn0li2BQLsfoiHwoOwlEGD3ZzQFHjS7hOmGJAEvtyXDgN2mNIKX3Zbjht3BJAEvezTDk+3h
+        1PZ47lbfZZQjtaxiA34AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

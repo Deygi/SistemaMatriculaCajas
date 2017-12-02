@@ -17,7 +17,7 @@ namespace SistemaMatriculaCajas.Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI_Login());
+        Application.Run(new GUI_Login());
         }
     }
 }
