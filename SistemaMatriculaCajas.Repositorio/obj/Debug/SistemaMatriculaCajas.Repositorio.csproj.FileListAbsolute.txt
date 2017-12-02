@@ -24,3 +24,16 @@ C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\bin\Deb
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.dll
 C:\Users\Yampier\Desktop\Nueva carpeta\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.xml
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.csprojResolveAssemblyReference.cache
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Repositorio\obj\Debug\SistemaMatriculaCajas.Repositorio.pdb

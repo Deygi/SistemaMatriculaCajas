@@ -50,4 +50,31 @@ C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\ob
 D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.exe.config
 D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.exe
 D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.pdb
+<<<<<<< HEAD
 C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.Form_GestionUsuario.resources
+=======
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.exe
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Repositorio.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Modelo.dll
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.LogicaNegocio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.xml
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Repositorio.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Modelo.pdb
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csprojResolveAssemblyReference.cache
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Form1.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.GUI_Principal.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU01_Autenticacion.GUI_Login.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.Form_GestionUsuario.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.Form_NuevoUsuario.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Properties.Resources.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.UserControlPrincipal.resources
+D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csproj.GenerateResource.Cache
+>>>>>>> 552dd09ec9f3090bdf7a228a1007e1c1ec681716

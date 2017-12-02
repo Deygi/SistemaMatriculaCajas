@@ -81,7 +81,7 @@
             this.txtPass_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPass_Usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPass_Usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPass_Usuario.isPassword = false;
+            this.txtPass_Usuario.isPassword = true;
             this.txtPass_Usuario.Location = new System.Drawing.Point(96, 267);
             this.txtPass_Usuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass_Usuario.Name = "txtPass_Usuario";
