@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="LogNeg_Modulo.cs" />
     <Compile Include="LogNeg_Usuario.cs" />
+    <Compile Include="LogNeg_Usuario_Modulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
