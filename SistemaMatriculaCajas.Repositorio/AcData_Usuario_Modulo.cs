@@ -52,10 +52,7 @@ namespace SistemaMatriculaCajas.Repositorio
 
         public List<USUARIO_MODULO> ListarTodos()
         {
-            using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
-            {
-                return contexto.USUARIO_MODULO.ToList();
-            }
+            throw new NotImplementedException();
         }
 
         public bool registrar(USUARIO_MODULO entidad)

@@ -36,6 +36,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userControlPrincipal1 = new SistemaMatriculaCajas.Presentacion.UserControlPrincipal();
+            this.userControlGestionUsuario2 = new SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario();
+            this.userControlGestionUsuario1 = new SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario();
             this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton8 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -51,9 +54,6 @@
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGestUser = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.userControlPrincipal1 = new SistemaMatriculaCajas.Presentacion.UserControlPrincipal();
-            this.userControlGestionUsuario2 = new SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario();
-            this.userControlGestionUsuario1 = new SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario.UserControlGestionUsuario();
             this.sidemenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
@@ -122,7 +122,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(21)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(153)))), ((int)(((byte)(2)))));
             this.panel1.Controls.Add(this.bunifuImageButton7);
             this.panel1.Controls.Add(this.bunifuImageButton8);
             this.panel1.Controls.Add(this.bunifuImageButton5);
@@ -131,14 +131,35 @@
             this.panel1.Controls.Add(this.bunifuImageButton3);
             this.panel1.Controls.Add(this.bunifuImageButton2);
             this.panel1.Controls.Add(this.bunifuImageButton1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Location = new System.Drawing.Point(-1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1198, 36);
             this.panel1.TabIndex = 17;
             // 
+            // userControlPrincipal1
+            // 
+            this.userControlPrincipal1.Location = new System.Drawing.Point(225, 38);
+            this.userControlPrincipal1.Name = "userControlPrincipal1";
+            this.userControlPrincipal1.Size = new System.Drawing.Size(968, 728);
+            this.userControlPrincipal1.TabIndex = 19;
+            // 
+            // userControlGestionUsuario2
+            // 
+            this.userControlGestionUsuario2.Location = new System.Drawing.Point(229, 36);
+            this.userControlGestionUsuario2.Name = "userControlGestionUsuario2";
+            this.userControlGestionUsuario2.Size = new System.Drawing.Size(984, 728);
+            this.userControlGestionUsuario2.TabIndex = 18;
+            // 
+            // userControlGestionUsuario1
+            // 
+            this.userControlGestionUsuario1.Location = new System.Drawing.Point(3, 31);
+            this.userControlGestionUsuario1.Name = "userControlGestionUsuario1";
+            this.userControlGestionUsuario1.Size = new System.Drawing.Size(1198, 768);
+            this.userControlGestionUsuario1.TabIndex = 23;
+            // 
             // bunifuImageButton7
             // 
-            this.bunifuImageButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(21)))));
+            this.bunifuImageButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(153)))), ((int)(((byte)(2)))));
             this.bunifuImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.Image")));
             this.bunifuImageButton7.ImageActive = null;
             this.bunifuImageButton7.Location = new System.Drawing.Point(1139, 11);
@@ -152,7 +173,7 @@
             // 
             // bunifuImageButton8
             // 
-            this.bunifuImageButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(21)))));
+            this.bunifuImageButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(153)))), ((int)(((byte)(2)))));
             this.bunifuImageButton8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton8.Image")));
             this.bunifuImageButton8.ImageActive = null;
             this.bunifuImageButton8.Location = new System.Drawing.Point(1167, 11);
@@ -218,7 +239,7 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(21)))));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(153)))), ((int)(((byte)(2)))));
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(8, 6);
@@ -465,27 +486,6 @@
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("mobileflat-font", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // userControlPrincipal1
-            // 
-            this.userControlPrincipal1.Location = new System.Drawing.Point(225, 38);
-            this.userControlPrincipal1.Name = "userControlPrincipal1";
-            this.userControlPrincipal1.Size = new System.Drawing.Size(968, 728);
-            this.userControlPrincipal1.TabIndex = 19;
-            // 
-            // userControlGestionUsuario2
-            // 
-            this.userControlGestionUsuario2.Location = new System.Drawing.Point(229, 36);
-            this.userControlGestionUsuario2.Name = "userControlGestionUsuario2";
-            this.userControlGestionUsuario2.Size = new System.Drawing.Size(984, 728);
-            this.userControlGestionUsuario2.TabIndex = 18;
-            // 
-            // userControlGestionUsuario1
-            // 
-            this.userControlGestionUsuario1.Location = new System.Drawing.Point(3, 31);
-            this.userControlGestionUsuario1.Name = "userControlGestionUsuario1";
-            this.userControlGestionUsuario1.Size = new System.Drawing.Size(1198, 768);
-            this.userControlGestionUsuario1.TabIndex = 23;
-            // 
             // GUI_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,7 +498,6 @@
             this.Controls.Add(this.userControlGestionUsuario1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GUI_Principal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUI_Principal";
             this.sidemenu.ResumeLayout(false);
             this.sidemenu.PerformLayout();
