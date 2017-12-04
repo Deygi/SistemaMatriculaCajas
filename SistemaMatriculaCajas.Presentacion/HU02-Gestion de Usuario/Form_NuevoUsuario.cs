@@ -141,6 +141,10 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
                 Pass_Usuario = TxtboxPass.Text
             };
         }
-        
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

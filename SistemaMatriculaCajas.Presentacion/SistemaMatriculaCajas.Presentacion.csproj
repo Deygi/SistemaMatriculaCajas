@@ -63,6 +63,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HU03-Gestion Postulante\Form_Postulante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HU03-Gestion Postulante\Form_Postulante.Designer.cs">
+      <DependentUpon>Form_Postulante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Persona\Form_GestionPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Persona\Form_GestionPersona.Designer.cs">
+      <DependentUpon>Form_GestionPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     <Compile Include="HU02-Gestion de Usuario\UserControlGestionUsuario.Designer.cs">
       <DependentUpon>UserControlGestionUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="HU03-Gestion Postulante\Form_examen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HU03-Gestion Postulante\Form_examen.Designer.cs">
+      <DependentUpon>Form_examen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControlPrincipal.cs">
@@ -103,6 +121,12 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HU03-Gestion Postulante\Form_Postulante.resx">
+      <DependentUpon>Form_Postulante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Persona\Form_GestionPersona.resx">
+      <DependentUpon>Form_GestionPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Principal.resx">
       <DependentUpon>GUI_Principal.cs</DependentUpon>
@@ -118,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HU02-Gestion de Usuario\UserControlGestionUsuario.resx">
       <DependentUpon>UserControlGestionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HU03-Gestion Postulante\Form_examen.resx">
+      <DependentUpon>Form_examen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

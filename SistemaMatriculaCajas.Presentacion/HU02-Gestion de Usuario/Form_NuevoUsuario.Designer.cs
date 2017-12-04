@@ -173,7 +173,11 @@
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.BtnGuardar.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
+
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+
             // 
             // btnNuevo
             // 
@@ -224,7 +228,7 @@
             this.TxtboxDni.Margin = new System.Windows.Forms.Padding(4);
             this.TxtboxDni.Name = "TxtboxDni";
             this.TxtboxDni.Size = new System.Drawing.Size(370, 44);
-            this.TxtboxDni.TabIndex = 19;
+            this.TxtboxDni.TabIndex = 6;
             this.TxtboxDni.Text = "DNI";
             this.TxtboxDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -242,7 +246,7 @@
             this.txtboxApMat.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxApMat.Name = "txtboxApMat";
             this.txtboxApMat.Size = new System.Drawing.Size(370, 44);
-            this.txtboxApMat.TabIndex = 20;
+            this.txtboxApMat.TabIndex = 4;
             this.txtboxApMat.Text = "Apellido Materno";
             this.txtboxApMat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -260,7 +264,7 @@
             this.TxtboxPass.Margin = new System.Windows.Forms.Padding(4);
             this.TxtboxPass.Name = "TxtboxPass";
             this.TxtboxPass.Size = new System.Drawing.Size(370, 44);
-            this.TxtboxPass.TabIndex = 21;
+            this.TxtboxPass.TabIndex = 2;
             this.TxtboxPass.Text = "Password";
             this.TxtboxPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -278,7 +282,7 @@
             this.TxtboxNom.Margin = new System.Windows.Forms.Padding(4);
             this.TxtboxNom.Name = "TxtboxNom";
             this.TxtboxNom.Size = new System.Drawing.Size(370, 44);
-            this.TxtboxNom.TabIndex = 22;
+            this.TxtboxNom.TabIndex = 5;
             this.TxtboxNom.Text = "Nombres";
             this.TxtboxNom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -296,7 +300,7 @@
             this.TxtboxApPat.Margin = new System.Windows.Forms.Padding(4);
             this.TxtboxApPat.Name = "TxtboxApPat";
             this.TxtboxApPat.Size = new System.Drawing.Size(370, 44);
-            this.TxtboxApPat.TabIndex = 23;
+            this.TxtboxApPat.TabIndex = 3;
             this.TxtboxApPat.Text = "Apellido Paterno";
             this.TxtboxApPat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -314,7 +318,7 @@
             this.TxtboxCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.TxtboxCodigo.Name = "TxtboxCodigo";
             this.TxtboxCodigo.Size = new System.Drawing.Size(370, 44);
-            this.TxtboxCodigo.TabIndex = 24;
+            this.TxtboxCodigo.TabIndex = 1;
             this.TxtboxCodigo.Text = "Codigo";
             this.TxtboxCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 

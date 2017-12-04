@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnGstionUsuario = new System.Windows.Forms.PictureBox();
             this.btnNuwvoUsuario = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGstionUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNuwvoUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,15 +46,16 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "GESTION DE USUARIO";
             // 
-            // pictureBox2
+            // btnGstionUsuario
             // 
-            this.pictureBox2.Image = global::SistemaMatriculaCajas.Presentacion.Properties.Resources.list__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(546, 229);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.btnGstionUsuario.Image = global::SistemaMatriculaCajas.Presentacion.Properties.Resources.list__2_;
+            this.btnGstionUsuario.Location = new System.Drawing.Point(546, 229);
+            this.btnGstionUsuario.Name = "btnGstionUsuario";
+            this.btnGstionUsuario.Size = new System.Drawing.Size(256, 256);
+            this.btnGstionUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnGstionUsuario.TabIndex = 6;
+            this.btnGstionUsuario.TabStop = false;
+            this.btnGstionUsuario.Click += new System.EventHandler(this.btnGstionUsuario_Click);
             // 
             // btnNuwvoUsuario
             // 
@@ -71,12 +72,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnGstionUsuario);
             this.Controls.Add(this.btnNuwvoUsuario);
             this.Controls.Add(this.label1);
             this.Name = "UserControlGestionUsuario";
             this.Size = new System.Drawing.Size(984, 728);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGstionUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNuwvoUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,6 +88,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnNuwvoUsuario;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnGstionUsuario;
     }
 }
