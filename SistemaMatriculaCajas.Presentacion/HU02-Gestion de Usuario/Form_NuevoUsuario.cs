@@ -31,15 +31,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            #region texto predefinido
-            TxtboxCodigo.Text = "Codigo";
-            TxtboxCodigo.Select();
-            TxtboxPass.Text = "Password";
-            TxtboxApPat.Text = "Apellido Paterno";
-            txtboxApMat.Text = " Apellidos Materno";
-            TxtboxNom.Text = "Nombres";
-            TxtboxDni.Text = "Dni";
-            #endregion
+            
 
         }
 
@@ -50,113 +42,131 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            #region Verificar contenedores
-            if (string.IsNullOrEmpty(TxtboxCodigo.Text))
-            {
-                errorProvider1.SetError(TxtboxCodigo, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(TxtboxApPat.Text))
-            {
-                errorProvider1.SetError(TxtboxApPat, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtboxApMat.Text))
-            {
-                errorProvider1.SetError(txtboxApMat, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(TxtboxPass.Text))
-            {
-                errorProvider1.SetError(TxtboxPass, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(TxtboxNom.Text))
-            {
-                errorProvider1.SetError(TxtboxNom, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(TxtboxDni.Text))
-            {
-                errorProvider1.SetError(TxtboxDni, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
-            #endregion
-
-            USUARIO usuarioNew = registrarUsuario();
-            USUARIO usuario;
-
-            if ((usuario = new LogNeg_Usuario().consultar(usuarioNew.Dni_Usuario)) != null)
-            {
-                if (usuario.Pass_Usuario != usuarioNew.Pass_Usuario)
-                {
-                    registrarUsuario();
-                    MessageBox.Show("ingreso con exito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                }
-                else
-                {
-                    MessageBox.Show("Fallo al registro", "Warming", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Usuario ya registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
 
         }
 
         private USUARIO registrarUsuario()
         {
+            MessageBox.Show("ingreso a registrar usario");
             return new USUARIO
             {
-                Cod_Usuario = int.Parse(TxtboxCodigo.Text),
+               
                 Nom_Usuario = TxtboxNom.Text,
                 Apll_Paterno = TxtboxApPat.Text,
                 Apll_Materno = txtboxApMat.Text,
                 Dni_Usuario = TxtboxDni.Text,
                 Pass_Usuario = TxtboxPass.Text
+                
             };
+           
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
 
+            //#region Verificar contenedores
+            //if (string.IsNullOrEmpty(TxtboxCodigo.Text))
+            //{
+            //    errorProvider1.SetError(TxtboxCodigo, "Campo requerido");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProvider1.Clear();
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(TxtboxApPat.Text))
+            //{
+            //    errorProvider1.SetError(TxtboxApPat, "Campo requerido");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProvider1.Clear();
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(txtboxApMat.Text))
+            //{
+            //    errorProvider1.SetError(txtboxApMat, "Campo requerido");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProvider1.Clear();
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(TxtboxPass.Text))
+            //{
+            //    errorProvider1.SetError(TxtboxPass, "Campo requerido");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProvider1.Clear();
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(TxtboxNom.Text))
+            //{
+            //    errorProvider1.SetError(TxtboxNom, "Campo requerido");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProvider1.Clear();
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(TxtboxDni.Text))
+            //{
+            //    errorProvider1.SetError(TxtboxDni, "Campo requerido");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProvider1.Clear();
+            //    return;
+            //}
+
+            //#endregion
+            registrarUsuario();
+            //USUARIO usuarioNew = registrarUsuario();
+
+            //USUARIO usuario = new LogNeg_Usuario().consultar(TxtboxDni.Text);
+            //MessageBox.Show("dni " + usuario);
+            //if (usuario.Dni_Usuario != TxtboxDni.Text)
+            //{
+            //    MessageBox.Show("llego aqui");
+            //    if (usuario.Pass_Usuario != usuarioNew.Pass_Usuario)
+            //    {
+                    
+            //        MessageBox.Show("ingreso con exito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Fallo al registro", "Warming", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Usuario ya registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            #region texto predefinido
+            TxtboxCodigo.Text = "Codigo";
+            TxtboxCodigo.Select();
+            TxtboxPass.Text = "Password";
+            TxtboxApPat.Text = "Apellido Paterno";
+            txtboxApMat.Text = " Apellidos Materno";
+            TxtboxNom.Text = "Nombres";
+            TxtboxDni.Text = "Dni";
+            #endregion
         }
     }
 }

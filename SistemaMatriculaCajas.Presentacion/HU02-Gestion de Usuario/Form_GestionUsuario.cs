@@ -14,7 +14,8 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 {
     public partial class Form_GestionUsuario : Form
     {
-        USUARIO_MODULO u_Modulo;
+      ///  USUARIO_MODULO u_Modulo;
+    
         private bool actualiza = false;
 
         public Form_GestionUsuario()
@@ -26,26 +27,22 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         {
 
         }
-
+        
         #region listado de usuarios y modulos
         private void Form_GestionUsuario_Load(object sender, EventArgs e)
         {
             listarUsuarios();
             ListarModulos();
-<<<<<<< HEAD
-          
-=======
-
->>>>>>> 552dd09ec9f3090bdf7a228a1007e1c1ec681716
+            
         }
         #region metodos de listado
         private void ListarModulos()
         {
-            MessageBox.Show("llego a listar modulos");
+            //MessageBox.Show("llego a listar modulos");
             List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
             foreach(var modulos in ListarModulos)
             {
-                listBoxTodos.Items.Add(modulos.Cod_Modulo + modulos.Nom_Modulo);
+                listBoxTodos.Items.Add(modulos.Cod_Modulo +" .- "+ modulos.Nom_Modulo);
             }
         }
         private void listarUsuarios()
@@ -53,7 +50,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
             foreach (var usuario in listaUsuarios)
             {
-                comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
+                comboBox1.Items.Add(usuario.Nom_Usuario +"-"+ usuario.Apll_Paterno);
             }          
         }
         #endregion
@@ -154,30 +151,27 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             this.Close();
-=======
-            List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
-            foreach (var modulos in ListarModulos)
-            {
-                listBoxTodos.Items.Add(modulos.Cod_Modulo + modulos.Nom_Modulo);
-            }
+           //List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
+           // foreach (var modulos in ListarModulos)
+           // {
+           //     listBoxTodos.Items.Add(modulos.Cod_Modulo +" .- "+ modulos.Nom_Modulo);
+           // }
 
             
->>>>>>> 552dd09ec9f3090bdf7a228a1007e1c1ec681716
+
         }
 
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-=======
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
             foreach (var usuario in listaUsuarios)
             {
                 comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
             }
->>>>>>> 552dd09ec9f3090bdf7a228a1007e1c1ec681716
+
         }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
@@ -195,18 +189,18 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             #endregion
             if (!actualiza)
             {
-                
+
             }
             else
-            {
+            { }
+        }
 
-<<<<<<< HEAD
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
-=======
-            }
->>>>>>> 552dd09ec9f3090bdf7a228a1007e1c1ec681716
+
         }
+
+        
     }
 }
