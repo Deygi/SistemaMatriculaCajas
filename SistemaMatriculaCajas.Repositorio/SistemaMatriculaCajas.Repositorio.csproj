@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcData_Carrera_Profesional.cs" />
+    <Compile Include="AcData_Colegio.cs" />
+    <Compile Include="AcData_Departamento.cs" />
+    <Compile Include="AcData_Detalle_RD.cs" />
+    <Compile Include="AcData_Distrito.cs" />
     <Compile Include="AcData_Modulo.cs" />
     <Compile Include="AcData_Usuario.cs" />
     <Compile Include="AcData_Usuario_Modulo.cs" />

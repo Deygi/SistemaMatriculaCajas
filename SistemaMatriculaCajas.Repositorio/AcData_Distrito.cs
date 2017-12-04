@@ -7,18 +7,17 @@ using SistemaMatriculaCajas.Entidades;
 
 namespace SistemaMatriculaCajas.Repositorio
 {
-    public class AcData_Usuario_Modulo : iOperaciones<USUARIO_MODULO>
+    public class AcData_Distrito : iOperaciones<DISTRITO>
     {
-        public bool actualizar(USUARIO_MODULO entidad)
+        public bool actualizar(DISTRITO entidad)
         {
             try
             {
                 using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
                 {
-                    USUARIO_MODULO usuario_modulo = contexto.USUARIO_MODULO.SingleOrDefault(x => x.Cod_USM == entidad.Cod_USM);
-                    usuario_modulo.Cod_Usuario = entidad.Cod_Usuario;
-                    usuario_modulo.Cod_Modulo = entidad.Cod_Modulo;
-                    usuario_modulo.Cod_USM = entidad.Cod_USM;
+                    DISTRITO distrito = contexto.DISTRITO.SingleOrDefault(x => x.Cod_Distrito == entidad.Cod_Distrito);
+                    distrito.Cod_Distrito = entidad.Cod_Distrito;
+                    distrito.Nom_Distrito = entidad.Nom_Distrito;
                     return true;
                 }
             }
@@ -29,13 +28,14 @@ namespace SistemaMatriculaCajas.Repositorio
             }
         }
 
-        public USUARIO_MODULO consultar(int cod)
+        public DISTRITO consultar(int cod)
         {
             try
             {
                 using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
                 {
-                    return contexto.USUARIO_MODULO.SingleOrDefault(x => x.Cod_USM == cod);
+                    return contexto.DISTRITO.SingleOrDefault(x => x.Cod_Distrito == cod);
+
                 }
             }
             catch (Exception)
@@ -50,21 +50,21 @@ namespace SistemaMatriculaCajas.Repositorio
             throw new NotImplementedException();
         }
 
-        public List<USUARIO_MODULO> ListarTodos()
+        public List<DISTRITO> ListarTodos()
         {
             using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
             {
-                return contexto.USUARIO_MODULO.ToList();
+               return contexto.DISTRITO.ToList();
             }
         }
 
-        public bool registrar(USUARIO_MODULO entidad)
+        public bool registrar(DISTRITO entidad)
         {
             try
             {
                 using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
                 {
-                    contexto.USUARIO_MODULO.Add(entidad);
+                    contexto.DISTRITO.Add(entidad);
                     contexto.SaveChanges();
                     return true;
                 }

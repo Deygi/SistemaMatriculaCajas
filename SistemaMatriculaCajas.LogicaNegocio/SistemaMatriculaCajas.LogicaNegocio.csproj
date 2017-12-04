@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogNeg_Carrera_Profesional.cs" />
+    <Compile Include="LogNeg_Colegio.cs" />
+    <Compile Include="LogNeg_Detalle_RD.cs" />
     <Compile Include="LogNeg_Modulo.cs" />
     <Compile Include="LogNeg_Usuario.cs" />
     <Compile Include="LogNeg_Usuario_Modulo.cs" />
