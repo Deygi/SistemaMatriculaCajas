@@ -217,6 +217,7 @@
             this.btnAgregarAllMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarAllMod.Textcolor = System.Drawing.Color.White;
             this.btnAgregarAllMod.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarAllMod.Click += new System.EventHandler(this.btnAgregarAllMod_Click);
             // 
             // btnAgregarMod
             // 

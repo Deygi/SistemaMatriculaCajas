@@ -138,6 +138,7 @@
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnCancelar.Textcolor = System.Drawing.Color.White;
             this.BtnCancelar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
             // BtnGuardar
             // 
@@ -172,6 +173,7 @@
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // btnNuevo
             // 
@@ -206,6 +208,7 @@
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Textcolor = System.Drawing.Color.White;
             this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // TxtboxDni
             // 

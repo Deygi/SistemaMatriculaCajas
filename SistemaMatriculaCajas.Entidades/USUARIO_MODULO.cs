@@ -19,6 +19,6 @@ namespace SistemaMatriculaCajas.Entidades
         public int Cod_Modulo { get; set; }
     
         public virtual MODULO MODULO { get; set; }
-        public virtual USUARIO USUARIO { get; set; }
+        public virtual USUARIO_MODULO USUARIO { get; set; }
     }
 }

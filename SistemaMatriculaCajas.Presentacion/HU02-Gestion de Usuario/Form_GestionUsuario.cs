@@ -98,7 +98,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         }
         private void listarUsuarios()
         {
-            List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            List<USUARIO_MODULO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
             foreach (var usuario in listaUsuarios)
             {
                 comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
@@ -107,7 +107,9 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             #region Verificar lista de permisos actuales
-            if (string.IsNullOrEmpty(listBoxActual.Items.ToString()))
+            int ContaModulos = listBoxActual.Items.Count;
+
+            if (ContaModulos<=0)
             {
                 errorProvider1.SetError(listBoxActual, "No esta selecciondado ningun permiso");
                 return;
@@ -118,13 +120,63 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
                 return;
             }
             #endregion
+
+            USUARIO_MODULO umoduloNew = registrar();
+            USUARIO_MODULO umodulo;
+                        
             if (!actualiza)
             {
-                
+                if ((umodulo = new LogNeg_UsuariosModulo().registrar(umodulo)) != null)
+                {
+                    if (umodulo.Cod_Modulo != umoduloNew.Cod_Modulo)
+                    {
+                        registrar();
+                        MessageBox.Show("Registro con exito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Modulo ya registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Fallo al registro", "¡Warming!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
-
+                if ((umodulo = new LogNeg_UsuariosModulo().actualizar(umoduloNew)) != null)
+                {
+                    if (umodulo.Cod_Modulo != umoduloNew.Cod_Modulo)
+                    {
+                        registrar();
+                        MessageBox.Show("Actualización exitosa", "Información", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Modulo ya registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Fallo al actualizar", "¡Warming!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+        private USUARIO_MODULO registrar()
+        {
+            return new USUARIO_MODULO
+            {
+                Cod_USM = void,
+                Cod_Usuario = int.Parse(comboBox1.Text.Substring(0, 7)),
+                Cod_Modulo = int.Parse(listBoxActual.Items.ToString().Substring(0, 2))
+            };
+        }
+        private USUARIO_MODULO actualizar()
+        {
+            return new USUARIO_MODULO
+            {
+                
             }
         }
     }

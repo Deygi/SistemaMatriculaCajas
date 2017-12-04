@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 using SistemaMatriculaCajas.Entidades;
 namespace SistemaMatriculaCajas.Repositorio
 {
-    public class AcData_Usuario : iOperaciones<USUARIO>
+    public class AcData_Usuario : iOperaciones<USUARIO_MODULO>
     {
-        public bool actualizar(USUARIO entidad)
+        public bool actualizar(USUARIO_MODULO entidad)
         {
             try
             {
                 using (SistemaMatriculaCajasEntities contexto =new SistemaMatriculaCajasEntities())
                 {
-                    USUARIO usuario = contexto.USUARIO.SingleOrDefault(x => x.Cod_Usuario == entidad.Cod_Usuario);
+                    USUARIO_MODULO usuario = contexto.USUARIO.SingleOrDefault(x => x.Cod_Usuario == entidad.Cod_Usuario);
                     usuario.Nom_Usuario = entidad.Nom_Usuario;
                     usuario.Apll_Paterno = entidad.Apll_Paterno;
                     usuario.Apll_Materno = entidad.Apll_Materno;
@@ -32,13 +32,13 @@ namespace SistemaMatriculaCajas.Repositorio
         }
         
 
-        public USUARIO consultar(int cod)
+        public USUARIO_MODULO consultar(int cod)
         {
             try
             {
                 using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
                 {
-                    return contexto.USUARIO.SingleOrDefault(x => x.Cod_Usuario == cod);
+                    return contexto.USUARIO.SingleOrDefault((System.Linq.Expressions.Expression<Func<USUARIO_MODULO, bool>>)(x => x.Cod_Usuario == cod));
                 }
             }
             catch (Exception)
@@ -48,7 +48,7 @@ namespace SistemaMatriculaCajas.Repositorio
             }
         }
 
-        public USUARIO consultar(string dni)
+        public USUARIO_MODULO consultar(string dni)
         {
             try
             {
@@ -69,7 +69,7 @@ namespace SistemaMatriculaCajas.Repositorio
             throw new NotImplementedException();
         }
 
-        public List<USUARIO> ListarTodos()
+        public List<USUARIO_MODULO> ListarTodos()
         {
             try
             {
@@ -85,7 +85,7 @@ namespace SistemaMatriculaCajas.Repositorio
             }
         }
 
-        public bool registrar(USUARIO entidad)
+        public bool registrar(USUARIO_MODULO entidad)
         {
             try
             {

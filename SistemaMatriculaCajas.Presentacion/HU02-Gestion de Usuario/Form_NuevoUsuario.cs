@@ -40,7 +40,6 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             TxtboxNom.Text = "Nombres";
             TxtboxDni.Text = "Dni";
             #endregion
-
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
@@ -51,17 +50,6 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             #region Verificar contenedores
-            if (string.IsNullOrEmpty(TxtboxCodigo.Text))
-            {
-                errorProvider1.SetError(TxtboxCodigo, "Campo requerido");
-                return;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                return;
-            }
-
             if (string.IsNullOrEmpty(TxtboxApPat.Text))
             {
                 errorProvider1.SetError(TxtboxApPat, "Campo requerido");
@@ -119,8 +107,8 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
             #endregion
 
-            USUARIO usuarioNew = registrarUsuario();
-            USUARIO usuario;
+            USUARIO_MODULO usuarioNew = registrarUsuario();
+            USUARIO_MODULO usuario;
 
             if ((usuario = new LogNeg_Usuario().consultar(usuarioNew.Dni_Usuario)) != null)
             {
@@ -141,11 +129,11 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
         }
 
-        private USUARIO registrarUsuario()
+        private USUARIO_MODULO registrarUsuario()
         {
-            return new USUARIO
+            return new USUARIO_MODULO
             {
-                Cod_Usuario = int.Parse(TxtboxCodigo.Text),
+                Cod_Usuario = TxtboxCodigo.Text,
                 Nom_Usuario = TxtboxNom.Text,
                 Apll_Paterno = TxtboxApPat.Text,
                 Apll_Materno = txtboxApMat.Text,
@@ -153,5 +141,6 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
                 Pass_Usuario = TxtboxPass.Text
             };
         }
+        
     }
 }

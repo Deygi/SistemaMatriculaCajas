@@ -43,7 +43,7 @@ namespace SistemaMatriculaCajas.Entidades
         public virtual DbSet<PROVINCIA> PROVINCIA { get; set; }
         public virtual DbSet<RD> RD { get; set; }
         public virtual DbSet<SALON> SALON { get; set; }
-        public virtual DbSet<USUARIO> USUARIO { get; set; }
+        public virtual DbSet<USUARIO_MODULO> USUARIO { get; set; }
         public virtual DbSet<USUARIO_MODULO> USUARIO_MODULO { get; set; }
     }
 }
