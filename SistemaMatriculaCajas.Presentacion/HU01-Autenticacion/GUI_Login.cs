@@ -23,10 +23,10 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
         //Metodos del Diagrama de col
         private void verificarUsuario()
         {
-            USUARIO_MODULO usuarioLogin = construirUsuario();
-            USUARIO_MODULO usuario;
+            USUARIO usuarioLogin = construirUsuario();
+            USUARIO usuario;
 
-
+           
 
             if ((usuario=new LogNeg_Usuario().consultar(usuarioLogin.Dni_Usuario))!=null)
             {
@@ -50,7 +50,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
 
         private void listarUsuarios()
         {
-            List<USUARIO_MODULO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
         //textBox1.Clear();
         //foreach (var usuario in listaUsuarios)
         //{
@@ -59,9 +59,9 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
         }
 
         //Metodos de ayuda
-        private USUARIO_MODULO construirUsuario()
+        private USUARIO construirUsuario()
         {
-            return new USUARIO_MODULO
+            return new USUARIO
             {
                 Dni_Usuario = txtDni_Usuario.Text,
                 Pass_Usuario = txtPass_Usuario.Text

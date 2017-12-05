@@ -107,8 +107,8 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
             #endregion
 
-            USUARIO_MODULO usuarioNew = registrarUsuario();
-            USUARIO_MODULO usuario;
+            USUARIO usuarioNew = registrarUsuario();
+            USUARIO usuario;
 
             if ((usuario = new LogNeg_Usuario().consultar(usuarioNew.Dni_Usuario)) != null)
             {
@@ -131,7 +131,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 
         private USUARIO_MODULO registrarUsuario()
         {
-            return new USUARIO_MODULO
+            return new USUARIO
             {
                 Cod_Usuario = TxtboxCodigo.Text,
                 Nom_Usuario = TxtboxNom.Text,

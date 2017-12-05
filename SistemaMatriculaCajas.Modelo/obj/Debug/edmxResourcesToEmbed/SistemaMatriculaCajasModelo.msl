@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaMatriculaCajasModelStoreContainer" CdmEntityContainer="SistemaMatriculaCajasEntities">
+    <EntitySetMapping Name="CARRERA_PROFESIONAL">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.CARRERA_PROFESIONAL">
+        <MappingFragment StoreEntitySet="CARRERA_PROFESIONAL">
+          <ScalarProperty Name="Cod_CarreraP" ColumnName="Cod_CarreraP" />
+          <ScalarProperty Name="Nom_CarreraP" ColumnName="Nom_CarreraP" />
+          <ScalarProperty Name="Abrv_CarreraP" ColumnName="Abrv_CarreraP" />
+          <ScalarProperty Name="Cant_Semestre" ColumnName="Cant_Semestre" />
+          <ScalarProperty Name="Cant_Vacantes_D" ColumnName="Cant_Vacantes_D" />
+          <ScalarProperty Name="Cant_Vacantes_V" ColumnName="Cant_Vacantes_V" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLEGIO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.COLEGIO">
+        <MappingFragment StoreEntitySet="COLEGIO">
+          <ScalarProperty Name="Cod_Colegio" ColumnName="Cod_Colegio" />
+          <ScalarProperty Name="Nom_Colegio" ColumnName="Nom_Colegio" />
+          <ScalarProperty Name="Cod_Distrito" ColumnName="Cod_Distrito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CURSO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.CURSO">
+        <MappingFragment StoreEntitySet="CURSO">
+          <ScalarProperty Name="Cod_Curso" ColumnName="Cod_Curso" />
+          <ScalarProperty Name="Nom_Curso" ColumnName="Nom_Curso" />
+          <ScalarProperty Name="Alias_Curso" ColumnName="Alias_Curso" />
+          <ScalarProperty Name="Cant_Crd" ColumnName="Cant_Crd" />
+          <ScalarProperty Name="Semestre" ColumnName="Semestre" />
+          <ScalarProperty Name="Cod_CarreraP" ColumnName="Cod_CarreraP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTAMENTO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.DEPARTAMENTO">
+        <MappingFragment StoreEntitySet="DEPARTAMENTO">
+          <ScalarProperty Name="Cod_Dept" ColumnName="Cod_Dept" />
+          <ScalarProperty Name="Nom_Dept" ColumnName="Nom_Dept" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_RD">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.DETALLE_RD">
+        <MappingFragment StoreEntitySet="DETALLE_RD">
+          <ScalarProperty Name="Cod_Detalle_RD" ColumnName="Cod_Detalle_RD" />
+          <ScalarProperty Name="Tipo_RD" ColumnName="Tipo_RD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISTRITO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.DISTRITO">
+        <MappingFragment StoreEntitySet="DISTRITO">
+          <ScalarProperty Name="Cod_Distrito" ColumnName="Cod_Distrito" />
+          <ScalarProperty Name="Nom_Distrito" ColumnName="Nom_Distrito" />
+          <ScalarProperty Name="Cod_Provincia" ColumnName="Cod_Provincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTUDIANTE">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.ESTUDIANTE">
+        <MappingFragment StoreEntitySet="ESTUDIANTE">
+          <ScalarProperty Name="Cod_Estudiante" ColumnName="Cod_Estudiante" />
+          <ScalarProperty Name="Ident_Estudiante" ColumnName="Ident_Estudiante" />
+          <ScalarProperty Name="Situacion_Acadm" ColumnName="Situacion_Acadm" />
+          <ScalarProperty Name="Estado_Acadm" ColumnName="Estado_Acadm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXAMEN">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.EXAMEN">
+        <MappingFragment StoreEntitySet="EXAMEN">
+          <ScalarProperty Name="Cod_Examen" ColumnName="Cod_Examen" />
+          <ScalarProperty Name="Puntaje" ColumnName="Puntaje" />
+          <ScalarProperty Name="Cod_Postulante" ColumnName="Cod_Postulante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HORARIO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.HORARIO">
+        <MappingFragment StoreEntitySet="HORARIO">
+          <ScalarProperty Name="Cod_Horario" ColumnName="Cod_Horario" />
+          <ScalarProperty Name="Dias" ColumnName="Dias" />
+          <ScalarProperty Name="H_Inici" ColumnName="H_Inici" />
+          <ScalarProperty Name="H_Fin" ColumnName="H_Fin" />
+          <ScalarProperty Name="Cod_Curso" ColumnName="Cod_Curso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MATRICULA">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.MATRICULA">
+        <MappingFragment StoreEntitySet="MATRICULA">
+          <ScalarProperty Name="Cod_Matricula" ColumnName="Cod_Matricula" />
+          <ScalarProperty Name="Obs" ColumnName="Obs" />
+          <ScalarProperty Name="Fecha_Matricula" ColumnName="Fecha_Matricula" />
+          <ScalarProperty Name="Cursos_Matricula" ColumnName="Cursos_Matricula" />
+          <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+          <ScalarProperty Name="Cod_Salon" ColumnName="Cod_Salon" />
+          <ScalarProperty Name="Cod_CarreraP" ColumnName="Cod_CarreraP" />
+          <ScalarProperty Name="Cod_Estudiante" ColumnName="Cod_Estudiante" />
+          <ScalarProperty Name="Cod_Postulante" ColumnName="Cod_Postulante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MODALIDAD">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.MODALIDAD">
+        <MappingFragment StoreEntitySet="MODALIDAD">
+          <ScalarProperty Name="Cod_Modalidad" ColumnName="Cod_Modalidad" />
+          <ScalarProperty Name="Nom_Modalidad" ColumnName="Nom_Modalidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MODULO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.MODULO">
+        <MappingFragment StoreEntitySet="MODULO">
+          <ScalarProperty Name="Cod_Modulo" ColumnName="Cod_Modulo" />
+          <ScalarProperty Name="Nom_Modulo" ColumnName="Nom_Modulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERIODO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.PERIODO">
+        <MappingFragment StoreEntitySet="PERIODO">
+          <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+          <ScalarProperty Name="Ini_Semestre" ColumnName="Ini_Semestre" />
+          <ScalarProperty Name="Fin_Semestre" ColumnName="Fin_Semestre" />
+          <ScalarProperty Name="Recuperacion" ColumnName="Recuperacion" />
+          <ScalarProperty Name="Ini_Matricula" ColumnName="Ini_Matricula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONA">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.PERSONA">
+        <MappingFragment StoreEntitySet="PERSONA">
+          <ScalarProperty Name="Cod_Persona" ColumnName="Cod_Persona" />
+          <ScalarProperty Name="Ap_Paterno" ColumnName="Ap_Paterno" />
+          <ScalarProperty Name="Ap_Materno" ColumnName="Ap_Materno" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Dni" ColumnName="Dni" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="FechaNac" ColumnName="FechaNac" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Telf_Persona" ColumnName="Telf_Persona" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Cod_Colegio" ColumnName="Cod_Colegio" />
+          <ScalarProperty Name="Cod_Distrito" ColumnName="Cod_Distrito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POSTULANTE">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.POSTULANTE">
+        <MappingFragment StoreEntitySet="POSTULANTE">
+          <ScalarProperty Name="Cod_Postulante" ColumnName="Cod_Postulante" />
+          <ScalarProperty Name="Fecha_Inscripcion" ColumnName="Fecha_Inscripcion" />
+          <ScalarProperty Name="Cod_Persona" ColumnName="Cod_Persona" />
+          <ScalarProperty Name="Cod_Salon" ColumnName="Cod_Salon" />
+          <ScalarProperty Name="Cod_CarreraP" ColumnName="Cod_CarreraP" />
+          <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
+          <ScalarProperty Name="Cod_Modalidad" ColumnName="Cod_Modalidad" />
+          <ScalarProperty Name="Turno" ColumnName="Turno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVINCIA">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.PROVINCIA">
+        <MappingFragment StoreEntitySet="PROVINCIA">
+          <ScalarProperty Name="Cod_Provincia" ColumnName="Cod_Provincia" />
+          <ScalarProperty Name="Nom_Provincia" ColumnName="Nom_Provincia" />
+          <ScalarProperty Name="Cod_Dept" ColumnName="Cod_Dept" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RD">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.RD">
+        <MappingFragment StoreEntitySet="RD">
+          <ScalarProperty Name="Cod_RD" ColumnName="Cod_RD" />
+          <ScalarProperty Name="Cod_Estudiante" ColumnName="Cod_Estudiante" />
+          <ScalarProperty Name="Cod_Detalle_RD" ColumnName="Cod_Detalle_RD" />
+          <ScalarProperty Name="RD_Doc" ColumnName="RD_Doc" />
+          <ScalarProperty Name="Fecha_Carga" ColumnName="Fecha_Carga" />
+          <ScalarProperty Name="Fecha_Emision" ColumnName="Fecha_Emision" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SALON">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.SALON">
+        <MappingFragment StoreEntitySet="SALON">
+          <ScalarProperty Name="Cod_Salon" ColumnName="Cod_Salon" />
+          <ScalarProperty Name="Cant_Asientos" ColumnName="Cant_Asientos" />
+          <ScalarProperty Name="Cod_CarreraP" ColumnName="Cod_CarreraP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
+          <ScalarProperty Name="Nom_Usuario" ColumnName="Nom_Usuario" />
+          <ScalarProperty Name="Apll_Paterno" ColumnName="Apll_Paterno" />
+          <ScalarProperty Name="Apll_Materno" ColumnName="Apll_Materno" />
+          <ScalarProperty Name="Dni_Usuario" ColumnName="Dni_Usuario" />
+          <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO_MODULO">
+      <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.USUARIO_MODULO">
+        <MappingFragment StoreEntitySet="USUARIO_MODULO">
+          <ScalarProperty Name="Cod_USM" ColumnName="Cod_USM" />
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
+          <ScalarProperty Name="Cod_Modulo" ColumnName="Cod_Modulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

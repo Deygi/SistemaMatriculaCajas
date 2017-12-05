@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f327c3a460264caca7e82f87905e1f3d" Name="Diagram1">
+      <Diagram DiagramId="c62a3ebd038a44b8bc5b0ac4f1772ffc" Name="Diagram1">
         <EntityTypeShape EntityType="SistemaMatriculaCajasModel.CARRERA_PROFESIONAL" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="SistemaMatriculaCajasModel.COLEGIO" Width="1.5" PointX="3.75" PointY="22.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SistemaMatriculaCajasModel.CURSO" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
@@ -24,7 +24,7 @@
         <EntityTypeShape EntityType="SistemaMatriculaCajasModel.RD" Width="1.5" PointX="8.25" PointY="8.625" IsExpanded="true" />
         <EntityTypeShape EntityType="SistemaMatriculaCajasModel.SALON" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SistemaMatriculaCajasModel.USUARIO" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.USUARIO_MODULO" Width="1.5" PointX="3.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaMatriculaCajasModel.USUARIO_MODULO" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="SistemaMatriculaCajasModel.FK__CURSO__Cod_Carre__35BCFE0A" ManuallyRouted="false" />
         <AssociationConnector Association="SistemaMatriculaCajasModel.FK__MATRICULA__Cod_C__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="SistemaMatriculaCajasModel.FK__POSTULANT__Cod_C__403A8C7D" ManuallyRouted="false" />

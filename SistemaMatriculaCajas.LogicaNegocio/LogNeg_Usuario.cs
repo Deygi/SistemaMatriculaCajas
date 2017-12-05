@@ -8,19 +8,19 @@ using SistemaMatriculaCajas.Repositorio;
 
 namespace SistemaMatriculaCajas.LogicaNegocio 
 {
-    public class LogNeg_Usuario : iOperaciones<USUARIO_MODULO>
+    public class LogNeg_Usuario : iOperaciones<USUARIO>
     {
-        public bool actualizar(USUARIO_MODULO entidad)
+        public bool actualizar(USUARIO entidad)
         {
             return new AcData_Usuario().actualizar(entidad);
         }
 
-        public USUARIO_MODULO consultar(int cod)
+        public USUARIO consultar(int cod)
         {
             return new AcData_Usuario().consultar(cod);
         }
 
-        public USUARIO_MODULO consultar(string dni)
+        public USUARIO consultar(string dni)
         {
             return new AcData_Usuario().consultar(dni);
         }
@@ -30,12 +30,12 @@ namespace SistemaMatriculaCajas.LogicaNegocio
             throw new NotImplementedException();
         }
 
-        public List<USUARIO_MODULO> ListarTodos()
+        public List<USUARIO> ListarTodos()
         {
             return new AcData_Usuario().ListarTodos();
         }
 
-        public bool registrar(USUARIO_MODULO entidad)
+        public bool registrar(USUARIO entidad)
         {
             return new AcData_Usuario().registrar(entidad);
         }

@@ -12,10 +12,10 @@ namespace SistemaMatriculaCajas.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class USUARIO_MODULO
+    public partial class USUARIO
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public USUARIO_MODULO()
+        public USUARIO()
         {
             this.USUARIO_MODULO = new HashSet<USUARIO_MODULO>();
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemaMatriculaCajas.Entidades;
-
+using SistemaMatriculaCajas.Modelo;
 namespace SistemaMatriculaCajas.Repositorio
 {
     public class AcData_Usuario_Modulo : iOperaciones<USUARIO_MODULO>

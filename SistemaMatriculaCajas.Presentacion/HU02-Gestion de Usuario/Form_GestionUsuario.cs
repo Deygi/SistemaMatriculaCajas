@@ -158,7 +158,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
 
-            List<USUARIO_MODULO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            List<USUARIO_MODULO> listaUsuariosMod = new LogNeg_UsuariosModulo().ListarTodos();
 
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
 
@@ -231,7 +231,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private USUARIO_MODULO registrar()
         {
             return new USUARIO_MODULO
-            {
+            {//aqui no debes ingresa nada en Cod_USM
                 Cod_USM = null,
                 Cod_Usuario = int.Parse(comboBox1.Text.Substring(0, 7)),
                 Cod_Modulo = int.Parse(listBoxActual.Items.ToString().Substring(0, 2))
