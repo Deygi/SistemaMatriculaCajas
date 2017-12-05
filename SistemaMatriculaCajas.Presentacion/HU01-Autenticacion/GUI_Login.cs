@@ -25,8 +25,12 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
         {
             USUARIO usuarioLogin = construirUsuario();
             USUARIO usuario;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
 
+           
 
             if ((usuario=new LogNeg_Usuario().consultar(usuarioLogin.Dni_Usuario))!=null)
             {
@@ -50,7 +54,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
 
         private void listarUsuarios()
         {
-            List<USUARIO_MODULO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
         //textBox1.Clear();
         //foreach (var usuario in listaUsuarios)
         //{

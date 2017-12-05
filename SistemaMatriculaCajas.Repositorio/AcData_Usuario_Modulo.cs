@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using SistemaMatriculaCajas.Entidades;
 using SistemaMatriculaCajas.Modelo;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
 namespace SistemaMatriculaCajas.Repositorio
 {
     public class AcData_Usuario_Modulo : iOperaciones<USUARIO_MODULO>

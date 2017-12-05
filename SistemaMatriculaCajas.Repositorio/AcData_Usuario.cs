@@ -9,7 +9,11 @@ namespace SistemaMatriculaCajas.Repositorio
 {
     public class AcData_Usuario : iOperaciones<USUARIO>
     {
+<<<<<<< HEAD
         
+=======
+      
+>>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
 
         public bool actualizar(USUARIO entidad)
         {
@@ -88,6 +92,11 @@ namespace SistemaMatriculaCajas.Repositorio
             }
         }
 
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
         public bool registrar(USUARIO entidad)
         {
             try
@@ -105,5 +114,7 @@ namespace SistemaMatriculaCajas.Repositorio
                 return false;
             }
         }
+
+       
     }
 }

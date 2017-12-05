@@ -13,3 +13,8 @@ D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatricu
 D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
 D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
 D:\Instituto\githubReco\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Entidades\bin\Debug\SistemaMatriculaCajas.Entidades.pdb
+C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.dll
+C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Entidades\obj\Debug\SistemaMatriculaCajas.Entidades.pdb
