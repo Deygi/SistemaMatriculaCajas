@@ -51,17 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModeloSistemaMatriculaCajas.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloSistemaMatriculaCajas.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModeloSistemaMatriculaCajas.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SistemaMatriculaCajasModelo.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaMatriculaCajasModelo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaMatriculaCajasModelo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaMatriculaCajasModelo.edmx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -73,24 +73,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="ModeloSistemaMatriculaCajas.edmx">
+    <EntityDeploy Include="SistemaMatriculaCajasModelo.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModeloSistemaMatriculaCajas.Designer.cs</LastGenOutput>
+      <LastGenOutput>SistemaMatriculaCajasModelo.Designer.cs</LastGenOutput>
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="ModeloSistemaMatriculaCajas.edmx.diagram">
-      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
+    <None Include="SistemaMatriculaCajasModelo.edmx.diagram">
+      <DependentUpon>SistemaMatriculaCajasModelo.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModeloSistemaMatriculaCajas.Context.tt">
+    <Content Include="SistemaMatriculaCajasModelo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloSistemaMatriculaCajas.edmx</DependentUpon>
-      <LastGenOutput>ModeloSistemaMatriculaCajas.Context.cs</LastGenOutput>
-      <CustomToolNamespace>SistemaMatriculaCajas.Entidades</CustomToolNamespace>
+      <DependentUpon>SistemaMatriculaCajasModelo.edmx</DependentUpon>
+      <LastGenOutput>SistemaMatriculaCajasModelo.Context.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

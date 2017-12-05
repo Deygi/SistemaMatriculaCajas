@@ -14,8 +14,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
 {
     public partial class Form_GestionUsuario : Form
     {
-      ///  USUARIO_MODULO u_Modulo;
-    
+        USUARIO_MODULO u_Modulo;
         private bool actualiza = false;
 
         public Form_GestionUsuario()
@@ -27,22 +26,21 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         {
 
         }
-        
+
         #region listado de usuarios y modulos
         private void Form_GestionUsuario_Load(object sender, EventArgs e)
         {
             listarUsuarios();
             ListarModulos();
-            
         }
         #region metodos de listado
         private void ListarModulos()
         {
-            //MessageBox.Show("llego a listar modulos");
+            MessageBox.Show("llego a listar modulos");
             List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
             foreach(var modulos in ListarModulos)
             {
-                listBoxTodos.Items.Add(modulos.Cod_Modulo +" .- "+ modulos.Nom_Modulo);
+                listBoxTodos.Items.Add(modulos.Cod_Modulo + modulos.Nom_Modulo);
             }
         }
         private void listarUsuarios()
@@ -50,7 +48,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
             foreach (var usuario in listaUsuarios)
             {
-                comboBox1.Items.Add(usuario.Nom_Usuario +"-"+ usuario.Apll_Paterno);
+                comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
             }          
         }
         #endregion
@@ -100,10 +98,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             MoverItemsSeleccionados(listBoxActual, listBoxTodos);
            
         }
-        #endregion
-        
-      
-
+        #endregion    
         #region Boton Añade todos los modulos
            
         private void btnAgregarAllMod_Click(object sender, EventArgs e)
@@ -127,7 +122,6 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
             ListDE.Items.Clear();
         }
         #endregion
-
         #region quitar todos los modulos
         // mover todos los items a lista de todos.
         private void btnQuitarAllMod_Click(object sender, EventArgs e)
@@ -153,20 +147,21 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         {
 
             this.Close();
-           //List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
-           // foreach (var modulos in ListarModulos)
-           // {
-           //     listBoxTodos.Items.Add(modulos.Cod_Modulo +" .- "+ modulos.Nom_Modulo);
-           // }
 
-            
-
+            List<MODULO> ListarModulos = new LogNeg_Modulo().ListarTodos();
+            foreach (var modulos in ListarModulos)
+            {
+                listBoxTodos.Items.Add(modulos.Cod_Modulo + modulos.Nom_Modulo);
+            }
         }
 
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
 
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            List<USUARIO_MODULO> listaUsuariosMod = new LogNeg_Usuario().ListarTodos();
+
+
             foreach (var usuario in listaUsuarios)
             {
                 comboBox1.Items.Add(usuario.Nom_Usuario + usuario.Apll_Paterno);
@@ -176,7 +171,9 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             #region Verificar lista de permisos actuales
-            if (string.IsNullOrEmpty(listBoxActual.Items.ToString()))
+            int ContaModulos = listBoxActual.Items.Count;
+
+            if (ContaModulos<=0)
             {
                 errorProvider1.SetError(listBoxActual, "No esta selecciondado ningun permiso");
                 return;
@@ -187,20 +184,80 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
                 return;
             }
             #endregion
+
             //if (!actualiza)
             //{
 
             //}
             //else
             { }
+
+
+            USUARIO_MODULO umoduloNew = registrar();
+            USUARIO_MODULO umodulo;
+                        
+            if (!actualiza)
+            {
+                if ((umodulo = new LogNeg_UsuariosModulo().registrar(umodulo)) != null)
+                {
+                    if (umodulo.Cod_Modulo != umoduloNew.Cod_Modulo)
+                    {
+                        registrar();
+                        MessageBox.Show("Registro con exito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Modulo ya registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Fallo al registro", "¡Warming!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+
+                if ((umodulo = new LogNeg_UsuariosModulo().actualizar(umoduloNew)) != null)
+                {
+                    if (umodulo.Cod_Modulo != umoduloNew.Cod_Modulo)
+                    {
+                        registrar();
+                        MessageBox.Show("Actualización exitosa", "Información", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Modulo ya registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Fallo al actualizar", "¡Warming!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+        private USUARIO_MODULO registrar()
+        {
+            return new USUARIO_MODULO
+            {
+                Cod_USM = 0,
+                Cod_Usuario = int.Parse(comboBox1.Text.Substring(0, 7)),
+                Cod_Modulo = int.Parse(listBoxActual.Items.ToString().Substring(0, 2))
+            };
+        }
+        private USUARIO_MODULO actualizar()
+        {
+            return new USUARIO_MODULO
+            {
+            };
+
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
 
+            }
         }
-
-        
     }
-}
+

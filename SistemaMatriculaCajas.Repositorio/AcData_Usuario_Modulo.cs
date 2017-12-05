@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemaMatriculaCajas.Entidades;
+using SistemaMatriculaCajas.Modelo;
 
 namespace SistemaMatriculaCajas.Repositorio
 {
@@ -16,7 +17,6 @@ namespace SistemaMatriculaCajas.Repositorio
                 using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
                 {
                     USUARIO_MODULO usuario_modulo = contexto.USUARIO_MODULO.SingleOrDefault(x => x.Cod_USM == entidad.Cod_USM);
-                    usuario_modulo.Cod_Usuario = entidad.Cod_Usuario;
                     usuario_modulo.Cod_Modulo = entidad.Cod_Modulo;
                     usuario_modulo.Cod_USM = entidad.Cod_USM;
                     return true;
@@ -52,10 +52,7 @@ namespace SistemaMatriculaCajas.Repositorio
 
         public List<USUARIO_MODULO> ListarTodos()
         {
-            using (SistemaMatriculaCajasEntities contexto = new SistemaMatriculaCajasEntities())
-            {
-                return contexto.USUARIO_MODULO.ToList();
-            }
+            throw new NotImplementedException();
         }
 
         public bool registrar(USUARIO_MODULO entidad)

@@ -78,3 +78,6 @@ D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatr
 D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.UserControlPrincipal.resources
 D:\Instituto\githubReco\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csproj.GenerateResource.Cache
 >>>>>>> 552dd09ec9f3090bdf7a228a1007e1c1ec681716
+C:\Users\FRANK\Downloads\SistemaMatriculaCajas-master\SistemaMatriculaCajas.Presentacion\bin\Debug\SistemaMatriculaCajas.Presentacion.exe.config
+C:\Users\FRANK\Downloads\SistemaMatriculaCajas-master\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.exe
+C:\Users\FRANK\Downloads\SistemaMatriculaCajas-master\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.pdb

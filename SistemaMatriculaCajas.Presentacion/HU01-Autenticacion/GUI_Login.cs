@@ -50,7 +50,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
 
         private void listarUsuarios()
         {
-            List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
+            List<USUARIO_MODULO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
         //textBox1.Clear();
         //foreach (var usuario in listaUsuarios)
         //{
@@ -63,6 +63,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
         {
             return new USUARIO
             {
+
                 Dni_Usuario = txtDni_Usuario.Text,
                 Pass_Usuario = txtPass_Usuario.Text
             };

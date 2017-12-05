@@ -7,11 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaMatriculaCajas.Entidades
+namespace SistemaMatriculaCajas.Modelo
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using SistemaMatriculaCajas.Entidades;
     
     public partial class SistemaMatriculaCajasEntities : DbContext
     {

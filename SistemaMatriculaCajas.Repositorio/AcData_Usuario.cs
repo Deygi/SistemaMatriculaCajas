@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemaMatriculaCajas.Entidades;
+using SistemaMatriculaCajas.Modelo;
 namespace SistemaMatriculaCajas.Repositorio
 {
     public class AcData_Usuario : iOperaciones<USUARIO>
     {
+        
+
         public bool actualizar(USUARIO entidad)
         {
             try
