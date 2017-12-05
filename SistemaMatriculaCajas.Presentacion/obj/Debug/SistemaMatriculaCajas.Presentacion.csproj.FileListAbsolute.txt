@@ -97,3 +97,6 @@ C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaM
 C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Properties.Resources.resources
 C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.UserControlPrincipal.resources
 C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.csproj.GenerateResource.Cache
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU03_Gestion_Postulante.Form_Postulante.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.Gestion_Persona.Form_GestionPersona.resources
+C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Presentacion\obj\Debug\SistemaMatriculaCajas.Presentacion.HU03_Gestion_Postulante.Form_examen.resources

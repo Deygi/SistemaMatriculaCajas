@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SistemaMatriculaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SistemaMatriculaCajasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CARRERA_PROFESIONAL">
           <Key>
             <PropertyRef Name="Cod_CarreraP" />
@@ -476,7 +476,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SistemaMatriculaModelStoreContainer">
+        <EntityContainer Name="SistemaMatriculaCajasModelStoreContainer">
           <EntitySet Name="CARRERA_PROFESIONAL" EntityType="Self.CARRERA_PROFESIONAL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="COLEGIO" EntityType="Self.COLEGIO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CURSO" EntityType="Self.CURSO" Schema="dbo" store:Type="Tables" />
@@ -594,7 +594,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="SistemaMatriculaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="SistemaMatriculaCajasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="CARRERA_PROFESIONAL">
           <Key>
             <PropertyRef Name="Cod_CarreraP" />
@@ -1231,9 +1231,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SistemaMatriculaModelStoreContainer" CdmEntityContainer="SistemaMatriculaCajasEntities">
+        <EntityContainerMapping StorageEntityContainer="SistemaMatriculaCajasModelStoreContainer" CdmEntityContainer="SistemaMatriculaCajasEntities">
           <EntitySetMapping Name="CARRERA_PROFESIONAL">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.CARRERA_PROFESIONAL">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.CARRERA_PROFESIONAL">
               <MappingFragment StoreEntitySet="CARRERA_PROFESIONAL">
                 <ScalarProperty Name="Cod_CarreraP" ColumnName="Cod_CarreraP" />
                 <ScalarProperty Name="Nom_CarreraP" ColumnName="Nom_CarreraP" />
@@ -1245,7 +1245,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="COLEGIO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.COLEGIO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.COLEGIO">
               <MappingFragment StoreEntitySet="COLEGIO">
                 <ScalarProperty Name="Cod_Colegio" ColumnName="Cod_Colegio" />
                 <ScalarProperty Name="Nom_Colegio" ColumnName="Nom_Colegio" />
@@ -1254,7 +1254,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CURSO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.CURSO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.CURSO">
               <MappingFragment StoreEntitySet="CURSO">
                 <ScalarProperty Name="Cod_Curso" ColumnName="Cod_Curso" />
                 <ScalarProperty Name="Nom_Curso" ColumnName="Nom_Curso" />
@@ -1266,7 +1266,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DEPARTAMENTO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.DEPARTAMENTO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.DEPARTAMENTO">
               <MappingFragment StoreEntitySet="DEPARTAMENTO">
                 <ScalarProperty Name="Cod_Dept" ColumnName="Cod_Dept" />
                 <ScalarProperty Name="Nom_Dept" ColumnName="Nom_Dept" />
@@ -1274,7 +1274,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_RD">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.DETALLE_RD">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.DETALLE_RD">
               <MappingFragment StoreEntitySet="DETALLE_RD">
                 <ScalarProperty Name="Cod_Detalle_RD" ColumnName="Cod_Detalle_RD" />
                 <ScalarProperty Name="Tipo_RD" ColumnName="Tipo_RD" />
@@ -1282,7 +1282,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DISTRITO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.DISTRITO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.DISTRITO">
               <MappingFragment StoreEntitySet="DISTRITO">
                 <ScalarProperty Name="Cod_Distrito" ColumnName="Cod_Distrito" />
                 <ScalarProperty Name="Nom_Distrito" ColumnName="Nom_Distrito" />
@@ -1291,7 +1291,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ESTUDIANTE">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.ESTUDIANTE">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.ESTUDIANTE">
               <MappingFragment StoreEntitySet="ESTUDIANTE">
                 <ScalarProperty Name="Cod_Estudiante" ColumnName="Cod_Estudiante" />
                 <ScalarProperty Name="Ident_Estudiante" ColumnName="Ident_Estudiante" />
@@ -1301,7 +1301,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="EXAMEN">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.EXAMEN">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.EXAMEN">
               <MappingFragment StoreEntitySet="EXAMEN">
                 <ScalarProperty Name="Cod_Examen" ColumnName="Cod_Examen" />
                 <ScalarProperty Name="Puntaje" ColumnName="Puntaje" />
@@ -1310,7 +1310,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HORARIO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.HORARIO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.HORARIO">
               <MappingFragment StoreEntitySet="HORARIO">
                 <ScalarProperty Name="Cod_Horario" ColumnName="Cod_Horario" />
                 <ScalarProperty Name="Dias" ColumnName="Dias" />
@@ -1321,7 +1321,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MATRICULA">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.MATRICULA">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.MATRICULA">
               <MappingFragment StoreEntitySet="MATRICULA">
                 <ScalarProperty Name="Cod_Matricula" ColumnName="Cod_Matricula" />
                 <ScalarProperty Name="Obs" ColumnName="Obs" />
@@ -1336,7 +1336,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MODALIDAD">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.MODALIDAD">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.MODALIDAD">
               <MappingFragment StoreEntitySet="MODALIDAD">
                 <ScalarProperty Name="Cod_Modalidad" ColumnName="Cod_Modalidad" />
                 <ScalarProperty Name="Nom_Modalidad" ColumnName="Nom_Modalidad" />
@@ -1344,7 +1344,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MODULO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.MODULO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.MODULO">
               <MappingFragment StoreEntitySet="MODULO">
                 <ScalarProperty Name="Cod_Modulo" ColumnName="Cod_Modulo" />
                 <ScalarProperty Name="Nom_Modulo" ColumnName="Nom_Modulo" />
@@ -1353,7 +1353,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PERIODO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.PERIODO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.PERIODO">
               <MappingFragment StoreEntitySet="PERIODO">
                 <ScalarProperty Name="Cod_Periodo" ColumnName="Cod_Periodo" />
                 <ScalarProperty Name="Ini_Semestre" ColumnName="Ini_Semestre" />
@@ -1364,7 +1364,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PERSONA">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.PERSONA">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.PERSONA">
               <MappingFragment StoreEntitySet="PERSONA">
                 <ScalarProperty Name="Cod_Persona" ColumnName="Cod_Persona" />
                 <ScalarProperty Name="Ap_Paterno" ColumnName="Ap_Paterno" />
@@ -1383,7 +1383,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="POSTULANTE">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.POSTULANTE">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.POSTULANTE">
               <MappingFragment StoreEntitySet="POSTULANTE">
                 <ScalarProperty Name="Cod_Postulante" ColumnName="Cod_Postulante" />
                 <ScalarProperty Name="Fecha_Inscripcion" ColumnName="Fecha_Inscripcion" />
@@ -1397,7 +1397,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROVINCIA">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.PROVINCIA">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.PROVINCIA">
               <MappingFragment StoreEntitySet="PROVINCIA">
                 <ScalarProperty Name="Cod_Provincia" ColumnName="Cod_Provincia" />
                 <ScalarProperty Name="Nom_Provincia" ColumnName="Nom_Provincia" />
@@ -1406,7 +1406,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RD">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.RD">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.RD">
               <MappingFragment StoreEntitySet="RD">
                 <ScalarProperty Name="Cod_RD" ColumnName="Cod_RD" />
                 <ScalarProperty Name="Cod_Estudiante" ColumnName="Cod_Estudiante" />
@@ -1418,7 +1418,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SALON">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.SALON">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.SALON">
               <MappingFragment StoreEntitySet="SALON">
                 <ScalarProperty Name="Cod_Salon" ColumnName="Cod_Salon" />
                 <ScalarProperty Name="Cant_Asientos" ColumnName="Cant_Asientos" />
@@ -1427,7 +1427,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="USUARIO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.USUARIO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.USUARIO">
               <MappingFragment StoreEntitySet="USUARIO">
                 <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />
                 <ScalarProperty Name="Nom_Usuario" ColumnName="Nom_Usuario" />
@@ -1439,7 +1439,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="USUARIO_MODULO">
-            <EntityTypeMapping TypeName="SistemaMatriculaModel.USUARIO_MODULO">
+            <EntityTypeMapping TypeName="SistemaMatriculaCajasModel.USUARIO_MODULO">
               <MappingFragment StoreEntitySet="USUARIO_MODULO">
                 <ScalarProperty Name="Cod_USM" ColumnName="Cod_USM" />
                 <ScalarProperty Name="Cod_Usuario" ColumnName="Cod_Usuario" />

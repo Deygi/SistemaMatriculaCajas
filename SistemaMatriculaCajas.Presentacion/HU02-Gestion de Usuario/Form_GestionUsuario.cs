@@ -158,13 +158,10 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
 
-<<<<<<< HEAD
-=======
-            List<USUARIO_MODULO> listaUsuariosMod = new LogNeg_UsuariosModulo().ListarTodos();
 
->>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
+            List<USUARIO_MODULO> listaUsuariosMod = new LogNeg_UsuariosModulo().ListarTodos();
             List<USUARIO> listaUsuarios = new LogNeg_Usuario().ListarTodos();
-            List<USUARIO_MODULO> listaUsuariosMod = new LogNeg_Usuario().ListarTodos();
+            
 
 
             foreach (var usuario in listaUsuarios)
@@ -244,13 +241,12 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
         private USUARIO_MODULO registrar()
         {
             return new USUARIO_MODULO
-<<<<<<< HEAD
+
             {
                 Cod_USM = 0,
-=======
-            {//aqui no debes ingresa nada en Cod_USM
+
                 Cod_USM = null,
->>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
+
                 Cod_Usuario = int.Parse(comboBox1.Text.Substring(0, 7)),
                 Cod_Modulo = int.Parse(listBoxActual.Items.ToString().Substring(0, 2))
             };

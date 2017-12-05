@@ -25,10 +25,7 @@ namespace SistemaMatriculaCajas.Presentacion.HU01_Autenticacion
         {
             USUARIO usuarioLogin = construirUsuario();
             USUARIO usuario;
-<<<<<<< HEAD
 
-=======
->>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce
 
            
 

@@ -1,8 +1,4 @@
-<<<<<<< HEAD:SistemaMatriculaCajas.Modelo/SistemaMatriculaCajasModelo.Designer.cs
 ﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\DEY\Desktop\SistemaMatriculaCajas\SistemaMatriculaCajas.Modelo\SistemaMatriculaCajasModelo.edmx'. 
-=======
-﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\DEY\Desktop\cajas\SistemaMatriculaCajas.Modelo\SistemaMatriculaCajasModelo.edmx'. 
->>>>>>> 9e4b28cbb52aad49cc931de6e7d0e61cdb3a4cce:SistemaMatriculaCajas.Modelo/SistemaMatriculaCajasModelo.Designer.cs
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.
