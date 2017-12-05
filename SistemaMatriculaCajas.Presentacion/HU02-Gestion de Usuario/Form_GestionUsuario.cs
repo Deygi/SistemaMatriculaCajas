@@ -187,11 +187,11 @@ namespace SistemaMatriculaCajas.Presentacion.HU02_Gestion_de_Usuario
                 return;
             }
             #endregion
-            if (!actualiza)
-            {
+            //if (!actualiza)
+            //{
 
-            }
-            else
+            //}
+            //else
             { }
         }
 
